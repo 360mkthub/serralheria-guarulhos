@@ -71,6 +71,24 @@ const QUERY_POST_BY_SLUG = `
           description
         }
       }
+      categories {
+        nodes {
+          name
+          slug
+        }
+      }
+      tags {
+        nodes {
+          name
+          slug
+        }
+      }
+      author {
+        node {
+          name
+          description
+        }
+      }
     }
   }
 `
@@ -194,6 +212,9 @@ export async function getPostBySlug(slug: string) {
           description?: string | null
           openGraph?: { title?: string | null; description?: string | null } | null
         } | null
+        categories?: { nodes: Array<{ name?: string | null; slug?: string | null }> } | null
+        tags?: { nodes: Array<{ name?: string | null; slug?: string | null }> } | null
+        author?: { node?: { name?: string | null; description?: string | null } | null } | null
       } | null
     }>(QUERY_POST_BY_SLUG, { slug })
 
@@ -208,7 +229,10 @@ export async function getPostBySlug(slug: string) {
       content: post.content ?? '',
       date: post.date ?? '',
       featuredImage: mapFeaturedImage(post),
-      seo: mapSeo(post.seo ?? null)
+      seo: mapSeo(post.seo ?? null),
+      categories: post.categories ?? null,
+      tags: post.tags ?? null,
+      author: post.author ?? null
     }
   } catch (error) {
     console.error('Erro ao buscar post por slug:', error)

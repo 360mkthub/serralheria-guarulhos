@@ -72,6 +72,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   try {
     post = await getPostBySlug(slug)
+    console.log('DEBUG post:', JSON.stringify(post, null, 2))
   } catch {
     // Will show not found
   }
