@@ -7,7 +7,9 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Banners from '@/components/Banners' 
 import AuthorBox from '@/components/AuthorBox'
+import RelatedLinks from '@/components/RelatedLinks'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import { getInternalLinksForSlug } from '@/lib/blog-internal-links'
 import { getPostBySlug, getAllPostSlugs } from '@/lib/wordpress'
 
 // CONFIGURAÇÃO DE ROTA DINÂMICA
@@ -72,7 +74,6 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   try {
     post = await getPostBySlug(slug)
-    console.log('DEBUG post:', JSON.stringify(post, null, 2))
   } catch {
     // Will show not found
   }
@@ -95,6 +96,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   const readingTime = Math.ceil((post.content || '').replace(/<[^>]*>/g, '').length / 200) || 1
+  const internalLinks = getInternalLinksForSlug(slug)
 
   return (
     <div className="min-h-screen bg-white">
@@ -167,6 +169,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           )}
 
           <AuthorBox />
+
+          {internalLinks.length > 0 && <RelatedLinks items={internalLinks} />}
         </div>
       </main>
       <Footer />
