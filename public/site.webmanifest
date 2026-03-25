@@ -1,0 +1,44 @@
+{
+  "name": "Serralheria em Guarulhos",
+  "short_name": "Serralheria GRL",
+  "description": "Serralheria em Guarulhos especializada em portões automáticos, grades de proteção e estruturas metálicas. Atendemos todos os bairros com garantia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "home", "services"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Solicitar Orçamento",
+      "short_name": "Orçamento",
+      "description": "Solicite um orçamento grátis",
+      "url": "/contato",
+      "icons": [{ "src": "/favicon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Nossos Serviços",
+      "short_name": "Serviços",
+      "description": "Conheça nossos serviços",
+      "url": "/servicos/portoes-automaticos",
+      "icons": [{ "src": "/favicon.png", "sizes": "192x192" }]
+    }
+  ]
+}

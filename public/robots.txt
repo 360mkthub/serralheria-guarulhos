@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://serralheriaemguarulhos.com/sitemap.xml
+
+Disallow: /api/
