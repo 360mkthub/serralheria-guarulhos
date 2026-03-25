@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Services from '@/components/Services'
@@ -10,6 +11,22 @@ import CTA from '@/components/CTA'
 import ServiceFAQ, { faqs } from '@/components/ServiceFAQ'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+
+export const metadata: Metadata = {
+  title: 'Serralheria Guarulhos | Portoes, Grades e Estruturas Metalicas',
+  description:
+    'Serralheria em Guarulhos com mais de 15 anos. Portoes automaticos, grades de protecao e estruturas metalicas. Orcamento gratis em 24h na regiao!',
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/' },
+  openGraph: {
+    title: 'Serralheria Guarulhos | Portoes, Grades e Estruturas Metalicas',
+    description:
+      'Especialistas em metal em Guarulhos: portoes, grades e coberturas. Orcamento gratis em 24h.',
+    url: 'https://serralheriaemguarulhos.com/',
+    locale: 'pt_BR',
+    type: 'website',
+    siteName: 'Serralheria em Guarulhos',
+  },
+}
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',

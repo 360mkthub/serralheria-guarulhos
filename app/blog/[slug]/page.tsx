@@ -9,6 +9,7 @@ import Banners from '@/components/Banners'
 import AuthorBox from '@/components/AuthorBox'
 import RelatedLinks from '@/components/RelatedLinks'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import { SITE_URL } from '@/lib/site'
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/wordpress'
 
 export const dynamic = 'force-dynamic'
@@ -32,21 +33,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const post = await getPostBySlug(slug)
     if (!post) return { title: 'Post nao encontrado' }
 
-    const description = post.seo?.metaDesc || post.excerpt?.replace(/<[^>]*>/g, '').substring(0, 160) || ''
+    const seo = post.seo
+    const description =
+      (seo?.description && String(seo.description).trim()) ||
+      post.excerpt?.replace(/<[^>]*>/g, '').trim().substring(0, 155) ||
+      ''
+
+    const canonicalUrl = `${SITE_URL}/blog/${post.slug}/`
+    const ogTitle = seo?.openGraph?.title || seo?.title || post.title
+    const ogDescription = (seo?.openGraph?.description || seo?.description || description).trim()
 
     return {
-      title: `${post.title} | Blog Serralheria em Guarulhos`,
+      title: seo?.title?.trim() ? { absolute: seo.title.trim() } : `${post.title} | Blog Serralheria em Guarulhos`,
       description,
-      alternates: { canonical: post.seo?.canonical || `https://serralheriaemguarulhos.com/blog/${post.slug}/` },
+      alternates: { canonical: canonicalUrl },
       openGraph: {
-        title: post.title,
-        description,
-        url: `https://serralheriaemguarulhos.com/blog/${post.slug}/`,
+        title: ogTitle,
+        description: ogDescription,
+        url: canonicalUrl,
         type: 'article',
         locale: 'pt_BR',
+        siteName: 'Serralheria em Guarulhos',
         publishedTime: post.date,
-        modifiedTime: post.modified,
-        ...(post.featuredImage && { images: [{ url: post.featuredImage.node.sourceUrl }] }),
+        ...(post.featuredImage?.node?.sourceUrl && {
+          images: [{ url: post.featuredImage.node.sourceUrl }],
+        }),
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: ogTitle,
+        description: ogDescription,
       },
     }
   } catch {
@@ -61,12 +77,16 @@ interface Post {
   content: string
   excerpt: string
   date: string
-  modified: string
   featuredImage?: { node: { sourceUrl: string; altText: string } }
   author?: { node: { name: string; description: string } }
   categories?: { nodes: { name: string; slug: string }[] }
   tags?: { nodes: { name: string; slug: string }[] }
-  seo?: { title: string; metaDesc: string; canonical: string; schema?: { raw: string }; breadcrumbs?: { text: string; url: string }[] }
+  seo?: {
+    title?: string | null
+    description?: string | null
+    openGraph?: { title?: string | null; description?: string | null } | null
+    schema?: { raw: string }
+  } | null
 }
 
 export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {

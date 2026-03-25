@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' })
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://serralheriaemguarulhos.com.br'),
+  metadataBase: new URL('https://serralheriaemguarulhos.com'),
   title: {
     default: 'Serralheria em Guarulhos | Portoes Automaticos, Grades e Estruturas Metalicas',
     template: '%s | Serralheria em Guarulhos',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://serralheriaemguarulhos.com.br',
+    url: 'https://serralheriaemguarulhos.com',
     siteName: 'Serralheria em Guarulhos',
     title: 'Serralheria em Guarulhos | Portoes Automaticos, Grades e Estruturas Metalicas',
     description:
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://serralheriaemguarulhos.com.br',
+    canonical: 'https://serralheriaemguarulhos.com/',
   },
   robots: {
     index: true,

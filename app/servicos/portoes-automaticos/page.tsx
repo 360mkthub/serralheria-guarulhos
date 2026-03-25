@@ -9,14 +9,17 @@ import ServiceFAQ from '@/components/ServiceFAQ'
 import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Portoes Automaticos e Manuais em Guarulhos | Instalacao com Garantia',
-  description: 'Portoes automaticos e manuais em Guarulhos. Fabricacao e instalacao de portoes basculantes, deslizantes e pivotantes com garantia. Orcamento gratis!',
+  title: 'Portoes Automaticos Guarulhos | Instalacao e Manutencao',
+  description:
+    'Portoes automaticos em Guarulhos: basculante, deslizante e pivotante. Fabricacao, instalacao e motores PPA, Garen e Peccinin. Orcamento gratis!',
   keywords: ['portoes automaticos Guarulhos', 'portao basculante', 'portao deslizante', 'portao pivotante', 'motor para portao', 'manutencao de portao'],
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos/' },
   openGraph: {
-    title: 'Portoes Automaticos e Manuais em Guarulhos | Instalacao com Garantia',
-    description: 'Especialistas em portoes automaticos em Guarulhos. Basculante, deslizante e pivotante. Motores PPA, Garen, Peccinin. Orcamento gratis!',
-    url: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos',
+    title: 'Portoes Automaticos Guarulhos | Instalacao e Manutencao',
+    description:
+      'Especialistas em portoes automaticos em Guarulhos. Basculante, deslizante e pivotante. Motores PPA, Garen, Peccinin. Orcamento gratis!',
+    url: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos/',
+    siteName: 'Serralheria em Guarulhos',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/portao-automatico-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Portoes automaticos em Guarulhos' }],
     locale: 'pt_BR',
     type: 'website',
