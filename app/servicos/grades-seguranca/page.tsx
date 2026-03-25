@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ServiceFAQ from '@/components/ServiceFAQ'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Grades de Protecao em Guarulhos | Ferro, Aluminio e Inox',
@@ -85,6 +86,21 @@ const jsonLd = {
     },
   ],
 }
+
+const blogLinks = [
+  {
+    text: 'Grade de proteção para porta em Guarulhos: guia completo',
+    href: '/blog/grade-de-protecao-para-porta-em-guarulhos-guia-completo-para-escolher-comprar-e-instalar/',
+  },
+  {
+    text: 'Serralheria Jardim Cumbica: soluções completas em metal',
+    href: '/blog/serralheria-jardim-cumbica-solucoes-completas-em-metal/',
+  },
+  {
+    text: 'Portão de ferro vs alumínio: qual a melhor escolha para sua casa ou empresa?',
+    href: '/blog/portao-de-ferro-vs-aluminio-qual-a-melhor-escolha-para-sua-casa-ou-empresa/',
+  },
+]
 
 export default function GradesPage() {
   const breadcrumbItems = [
@@ -201,6 +217,15 @@ export default function GradesPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-white border-t border-gray-100">
+          <div className="container-custom max-w-4xl">
+            <RelatedLinks
+              items={blogLinks}
+              title="Aprenda mais sobre segurança residencial no nosso blog"
+            />
           </div>
         </section>
       </main>

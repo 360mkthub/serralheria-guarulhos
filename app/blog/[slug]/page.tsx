@@ -9,8 +9,7 @@ import Banners from '@/components/Banners'
 import AuthorBox from '@/components/AuthorBox'
 import RelatedLinks from '@/components/RelatedLinks'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { getInternalLinksForSlug } from '@/lib/blog-internal-links'
-import { getPostBySlug, getAllPostSlugs } from '@/lib/wordpress'
+import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/wordpress'
 
 // CONFIGURAÇÃO DE ROTA DINÂMICA
 // Permite que posts não gerados no build sejam buscados sob demanda
@@ -96,7 +95,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   }
 
   const readingTime = Math.ceil((post.content || '').replace(/<[^>]*>/g, '').length / 200) || 1
-  const internalLinks = getInternalLinksForSlug(slug)
+  const related = await getRelatedPosts(slug, 3)
+  const internalLinks = related.map((p) => ({
+    text: p.title,
+    href: `/blog/${p.slug}/`,
+  }))
 
   return (
     <div className="min-h-screen bg-white">

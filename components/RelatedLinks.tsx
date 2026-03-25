@@ -7,9 +7,13 @@ export interface RelatedLinkItem {
 
 interface RelatedLinksProps {
   items: RelatedLinkItem[]
+  /** Padrão: título usado nas páginas de post do blog. */
+  title?: string
 }
 
-export default function RelatedLinks({ items }: RelatedLinksProps) {
+const DEFAULT_TITLE = 'Saiba mais sobre portões e serralheria em Guarulhos'
+
+export default function RelatedLinks({ items, title = DEFAULT_TITLE }: RelatedLinksProps) {
   if (!items.length) return null
 
   return (
@@ -18,7 +22,7 @@ export default function RelatedLinks({ items }: RelatedLinksProps) {
       aria-labelledby="related-links-heading"
     >
       <h2 id="related-links-heading" className="text-lg font-semibold text-blue-900 mb-4">
-        Saiba mais sobre portões e serralheria em Guarulhos
+        {title}
       </h2>
       <ul className="list-none space-y-2.5 m-0 p-0">
         {items.map((item, index) => (

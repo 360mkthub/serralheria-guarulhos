@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ServiceFAQ from '@/components/ServiceFAQ'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Portoes Automaticos e Manuais em Guarulhos | Instalacao com Garantia',
@@ -90,6 +91,21 @@ const jsonLd = {
     },
   ],
 }
+
+const blogLinks = [
+  {
+    text: 'Preços e Guia do Portão Basculante em Guarulhos',
+    href: '/blog/portao-basculante-automatico-guarulhos-precos-2026-guia/',
+  },
+  {
+    text: 'Quanto custa automatizar um portão deslizante?',
+    href: '/blog/portao-automatico-em-guarulhos-preco-e-instalacao-de-motor-deslizante/',
+  },
+  {
+    text: 'Motor PPA vs Garen: Qual é o melhor para sua casa?',
+    href: '/blog/motor-ppa-vs-garen-para-portao-qual-e-o-melhor-para-a-sua-casa/',
+  },
+]
 
 export default function PortoesPage() {
   const breadcrumbItems = [
@@ -219,6 +235,12 @@ export default function PortoesPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-white border-t border-gray-100">
+          <div className="container-custom max-w-4xl">
+            <RelatedLinks items={blogLinks} title="Aprenda mais no nosso blog" />
           </div>
         </section>
       </main>

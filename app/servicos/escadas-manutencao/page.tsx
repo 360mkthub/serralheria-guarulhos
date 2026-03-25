@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ServiceFAQ from '@/components/ServiceFAQ'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Escadas e Corrimaos em Guarulhos | Aco Inox, Aluminio e Ferro',
@@ -85,6 +86,17 @@ const jsonLd = {
     },
   ],
 }
+
+const blogLinks = [
+  {
+    text: 'Serralheria Jardim Cumbica: soluções completas em metal',
+    href: '/blog/serralheria-jardim-cumbica-solucoes-completas-em-metal/',
+  },
+  {
+    text: 'Portão de ferro vs alumínio: qual a melhor escolha para sua casa ou empresa?',
+    href: '/blog/portao-de-ferro-vs-aluminio-qual-a-melhor-escolha-para-sua-casa-ou-empresa/',
+  },
+]
 
 export default function EscadasPage() {
   const breadcrumbItems = [
@@ -213,6 +225,15 @@ export default function EscadasPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-white border-t border-gray-100">
+          <div className="container-custom max-w-4xl">
+            <RelatedLinks
+              items={blogLinks}
+              title="Aprenda mais sobre serralheria no nosso blog"
+            />
           </div>
         </section>
       </main>

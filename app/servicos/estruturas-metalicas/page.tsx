@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ServiceFAQ from '@/components/ServiceFAQ'
+import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Estruturas Metalicas em Guarulhos | Galpoes, Mezaninos e Coberturas',
@@ -86,6 +87,21 @@ const jsonLd = {
     },
   ],
 }
+
+const blogLinks = [
+  {
+    text: 'Cobertura para área de lazer Guarulhos: guia completo',
+    href: '/blog/cobertura-para-area-de-lazer-guarulhos-guia-completo-para-escolher-a-melhor-solucao-para-seu-espaco/',
+  },
+  {
+    text: 'Serralheria Jardim Cumbica: soluções completas em metal',
+    href: '/blog/serralheria-jardim-cumbica-solucoes-completas-em-metal/',
+  },
+  {
+    text: 'Motor para portão industrial Guarulhos: por que escolher o modelo certo',
+    href: '/blog/motor-para-portao-industrial-guarulhos-por-que-escolher-o-modelo-certo/',
+  },
+]
 
 export default function EstruturasPage() {
   const breadcrumbItems = [{ label: 'Servicos', href: '/servicos' }, { label: 'Estruturas Metalicas', href: undefined }]
@@ -178,6 +194,15 @@ export default function EstruturasPage() {
                 </Link>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section-padding bg-white border-t border-gray-100">
+          <div className="container-custom max-w-4xl">
+            <RelatedLinks
+              items={blogLinks}
+              title="Aprenda mais sobre estruturas metálicas no nosso blog"
+            />
           </div>
         </section>
       </main>
