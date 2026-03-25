@@ -11,6 +11,8 @@ import RelatedLinks from '@/components/RelatedLinks'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/wordpress'
 
+export const dynamic = 'force-dynamic'
+
 // CONFIGURAÇÃO DE ROTA DINÂMICA
 // Permite que posts não gerados no build sejam buscados sob demanda
 export const dynamicParams = true 

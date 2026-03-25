@@ -8,6 +8,8 @@ import { BannerTop } from '@/components/Banners'
 import Breadcrumbs, { generateBreadcrumbSchema } from '@/components/Breadcrumbs'
 import { getPosts } from '@/lib/wordpress'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Blog | Serralheria em Guarulhos - Dicas e Novidades',
   description: 'Blog da Serralheria em Guarulhos. Dicas sobre portoes automaticos, grades de protecao, estruturas metalicas e manutencao. Acompanhe nossas novidades!',

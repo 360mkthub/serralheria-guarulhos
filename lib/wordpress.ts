@@ -9,7 +9,6 @@ async function graphqlFetch<T>(query: string, variables?: Record<string, unknown
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, variables }),
-    cache: 'no-store'
   })
   const json = await response.json()
   if (json.errors?.length) {
