@@ -68,7 +68,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Links Rápidos</h4>
+            <p className="font-bold text-lg mb-6">Links Rápidos</p>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -85,7 +85,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-bold text-lg mb-6">Serviços</h4>
+            <p className="font-bold text-lg mb-6">Serviços</p>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
@@ -102,7 +102,7 @@ const Footer = () => {
 
           {/* Localidades */}
           <div className="lg:col-span-2">
-            <h4 className="font-bold text-lg mb-6">Principais Localidades</h4>
+            <p className="font-bold text-lg mb-6">Principais Localidades</p>
             <ul className="grid grid-cols-2 gap-2">
               {localidadesLinks.map((link) => (
                 <li key={link.href}>
