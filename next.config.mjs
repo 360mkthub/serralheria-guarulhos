@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
   // Garante que as URLs com barra no final (padrão do WP) funcionem
   trailingSlash: true, 
   
