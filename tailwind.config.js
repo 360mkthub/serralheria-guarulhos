@@ -48,6 +48,8 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        /** Bump build/cache: harmless token; not used in UI. */
+        "force-rebuild": "#000001",
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",

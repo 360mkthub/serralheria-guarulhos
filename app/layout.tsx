@@ -84,7 +84,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased">
+      <body className="min-h-screen antialiased">
         {/* GTM noscript */}
         <noscript>
           <iframe
