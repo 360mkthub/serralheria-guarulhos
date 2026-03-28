@@ -1,20 +1,41 @@
-const WORDPRESS_GRAPHQL_URL = 'https://api.serralheriaemguarulhos.com/graphql'
+const WORDPRESS_GRAPHQL_URL_FALLBACK = 'https://api.serralheriaemguarulhos.com/graphql'
+
+/** Endpoint GraphQL do WordPress (Headless). Configure `NEXT_PUBLIC_WORDPRESS_API_URL` no deploy. */
+export function getWordpressGraphqlUrl(): string {
+  const env = process.env.NEXT_PUBLIC_WORDPRESS_API_URL?.trim()
+  return env && env.length > 0 ? env : WORDPRESS_GRAPHQL_URL_FALLBACK
+}
 
 function stripHtml(html: string): string {
   return html.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim()
 }
 
 async function graphqlFetch<T>(query: string, variables?: Record<string, unknown>): Promise<T> {
-  const response = await fetch(WORDPRESS_GRAPHQL_URL, {
+  const url = getWordpressGraphqlUrl()
+  const response = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ query, variables }),
   })
-  const json = await response.json()
+
+  let json: { data?: T; errors?: { message?: string }[] }
+  try {
+    json = await response.json()
+  } catch (err) {
+    console.error('[WordPress GraphQL] Resposta não é JSON:', response.status, url, err)
+    throw new Error(`GraphQL: resposta inválida (HTTP ${response.status})`)
+  }
+
   if (json.errors?.length) {
     console.error('GraphQL errors:', json.errors)
     throw new Error(json.errors[0]?.message || 'GraphQL error')
   }
+
+  if (!response.ok) {
+    console.error('[WordPress GraphQL] HTTP', response.status, url, json)
+    throw new Error(`GraphQL HTTP ${response.status}`)
+  }
+
   return json.data as T
 }
 
@@ -246,30 +267,35 @@ type PostSlugsPageData = {
   }
 }
 
-export async function getAllPostSlugs() {
-  try {
-    const slugs: string[] = []
-    let after: string | null = null
-    const pageSize = 100
+/** Busca todos os slugs de posts via GraphQL. Em falha de rede/CMS, lança (útil para try/catch no sitemap). */
+export async function fetchAllPostSlugsFromGraphql(): Promise<string[]> {
+  const slugs: string[] = []
+  let after: string | null = null
+  const pageSize = 100
 
-    for (;;) {
-      const pageData: PostSlugsPageData = await graphqlFetch<PostSlugsPageData>(
-        QUERY_POST_SLUGS_PAGE,
-        { first: pageSize, after }
-      )
+  for (;;) {
+    const pageData: PostSlugsPageData = await graphqlFetch<PostSlugsPageData>(
+      QUERY_POST_SLUGS_PAGE,
+      { first: pageSize, after }
+    )
 
-      const connection = pageData.posts
-      if (!connection) break
+    const connection = pageData.posts
+    if (!connection) break
 
-      for (const node of connection.nodes) {
-        if (node.slug) slugs.push(node.slug)
-      }
-
-      if (!connection.pageInfo?.hasNextPage || !connection.pageInfo.endCursor) break
-      after = connection.pageInfo.endCursor
+    for (const node of connection.nodes) {
+      if (node.slug) slugs.push(node.slug)
     }
 
-    return slugs
+    if (!connection.pageInfo?.hasNextPage || !connection.pageInfo.endCursor) break
+    after = connection.pageInfo.endCursor
+  }
+
+  return slugs
+}
+
+export async function getAllPostSlugs() {
+  try {
+    return await fetchAllPostSlugsFromGraphql()
   } catch (error) {
     console.error('Erro ao buscar slugs:', error)
     return []

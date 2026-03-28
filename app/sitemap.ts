@@ -3,7 +3,7 @@ import { existsSync, readdirSync } from 'fs'
 import { join } from 'path'
 import { bairros } from '@/lib/bairros-data'
 import { SITE_URL } from '@/lib/site'
-import { getAllPostSlugs } from '@/lib/wordpress'
+import { fetchAllPostSlugsFromGraphql } from '@/lib/wordpress'
 
 /** Regenera o sitemap a cada hora (slugs do WordPress e contagem de rotas). */
 export const revalidate = 3600
@@ -43,27 +43,42 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority,
   }))
 
-  const servicos: MetadataRoute.Sitemap = servicoSlugsFromAppDir().map((slug) => ({
-    url: absoluteUrl(`/servicos/${slug}`),
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.88,
-  }))
+  let servicos: MetadataRoute.Sitemap = []
+  try {
+    servicos = servicoSlugsFromAppDir().map((slug) => ({
+      url: absoluteUrl(`/servicos/${slug}`),
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.88,
+    }))
+  } catch (err) {
+    console.error('[sitemap] Falha ao montar URLs de serviços (filesystem):', err)
+  }
 
-  const localidades: MetadataRoute.Sitemap = bairros.map((b) => ({
-    url: absoluteUrl(`/localidades/${b.slug}`),
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.75,
-  }))
+  let localidades: MetadataRoute.Sitemap = []
+  try {
+    localidades = bairros.map((b) => ({
+      url: absoluteUrl(`/localidades/${b.slug}`),
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    }))
+  } catch (err) {
+    console.error('[sitemap] Falha ao montar URLs de localidades:', err)
+  }
 
-  const wpSlugs = await getAllPostSlugs()
-  const postsBlog: MetadataRoute.Sitemap = wpSlugs.map((slug) => ({
-    url: absoluteUrl(`/blog/${slug}`),
-    lastModified: now,
-    changeFrequency: 'weekly' as const,
-    priority: 0.65,
-  }))
+  let postsBlog: MetadataRoute.Sitemap = []
+  try {
+    const wpSlugs = await fetchAllPostSlugsFromGraphql()
+    postsBlog = wpSlugs.map((slug) => ({
+      url: absoluteUrl(`/blog/${slug}`),
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
+      priority: 0.65,
+    }))
+  } catch (err) {
+    console.error('[sitemap] Falha ao buscar slugs de posts no WordPress — sitemap servido sem URLs do blog:', err)
+  }
 
   return [...estaticas, ...servicos, ...localidades, ...postsBlog]
 }
