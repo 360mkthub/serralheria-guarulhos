@@ -8,8 +8,9 @@ import Gallery from '@/components/Gallery'
 import Testimonials from '@/components/Testimonials'
 import Process from '@/components/Process'
 import CTA from '@/components/CTA'
-import ServiceFAQ, { faqs } from '@/components/ServiceFAQ'
+import ServiceFAQ from '@/components/ServiceFAQ'
 import Footer from '@/components/Footer'
+import { homeFaqs } from '@/lib/home-faqs'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 export const metadata: Metadata = {
@@ -73,17 +74,21 @@ const localBusinessSchema = {
   ],
 }
 
+/** FAQPage (schema.org): mainEntity deve vir de dados resolvidos no servidor (não importar de Client Component). */
+const faqMainEntity = homeFaqs.map((faq) => ({
+  '@type': 'Question',
+  name: faq.question,
+  acceptedAnswer: {
+    '@type': 'Answer',
+    text: faq.answer,
+  },
+}))
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: Array.isArray(faqs) && faqs.length > 0 ? faqs.map((faq) => ({
-    '@type': 'Question',
-    name: faq.question,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.answer,
-    },
-  })) : [],
+  url: 'https://serralheriaemguarulhos.com/',
+  mainEntity: faqMainEntity,
 }
 
 const breadcrumbSchema = {
@@ -106,10 +111,12 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      {faqMainEntity.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -125,7 +132,7 @@ export default function HomePage() {
         <Testimonials />
         <Process />
         <CTA />
-        <ServiceFAQ faqs={faqs} title="Dúvidas Frequentes" />
+        <ServiceFAQ faqs={[...homeFaqs]} title="Dúvidas Frequentes" />
       </main>
       <Footer />
       <WhatsAppButton />
