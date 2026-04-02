@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 import type { MetadataRoute } from 'next'
 import { SITE_URL } from '@/lib/site'
 import { getAllPostSlugs } from '@/lib/wordpress'
@@ -12,9 +15,6 @@ function buildUrl(pathStr: string): string {
   }
   return `${SITE_URL}${normalized}`
 }
-
-/** Revalida o sitemap periodicamente para incluir novos posts do WordPress sem novo deploy. */
-export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes: Array<{
