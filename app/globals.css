@@ -1,8 +1,8 @@
-/* Force CSS Rebuild */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Force CSS Rebuild (após as diretivas @tailwind) */
 @layer base {
   :root {
     --background: 0 0% 100%;

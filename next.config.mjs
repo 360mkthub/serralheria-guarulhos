@@ -7,6 +7,8 @@ const __dirname = path.dirname(__filename)
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   trailingSlash: true,
+  /** Garante que o tracing do build use o diretório deste app (evita raiz errada com vários lockfiles). */
+  outputFileTracingRoot: path.join(__dirname),
   typescript: {
     ignoreBuildErrors: true,
   },
