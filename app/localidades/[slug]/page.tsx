@@ -8,6 +8,9 @@ import Breadcrumbs from '@/components/Breadcrumbs'
 import BairroTemplate from '@/components/BairroTemplate'
 import { bairros, getBairroBySlug } from '@/lib/bairros-data'
 
+/** Só slugs definidos em generateStaticParams; demais retornam 404 (sem SSR dinâmico inesperado). */
+export const dynamicParams = false
+
 export async function generateStaticParams() {
   return bairros.map((b) => ({ slug: b.slug }))
 }
@@ -15,7 +18,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   const bairro = getBairroBySlug(slug)
-  if (!bairro) return { title: 'Localidade nao encontrada' }
+  if (!bairro) notFound()
 
   return {
     title: bairro.title,

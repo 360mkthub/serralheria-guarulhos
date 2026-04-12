@@ -23,7 +23,10 @@ const nextConfig = {
     return config
   },
   images: {
+    /** Em hosts onde o otimizador falha, use NEXT_IMAGE_UNOPTIMIZED=1 no ambiente. */
+    ...(process.env.NEXT_IMAGE_UNOPTIMIZED === '1' ? { unoptimized: true } : {}),
     remotePatterns: [
+      { protocol: 'https', hostname: 'serralheriaemguarulhos.com', pathname: '/images/**' },
       { protocol: 'https', hostname: 'api.serralheriaemguarulhos.com' },
       { protocol: 'https', hostname: '**.wp.com' },
       { protocol: 'https', hostname: '**.wordpress.com' },

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Check, Award, Users, Clock } from 'lucide-react'
+import { HERO_ABOUT_IMAGE_SRC } from '@/lib/site-images'
 
 const About = () => {
   const differentials = [
@@ -25,7 +26,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video md:aspect-square">
               <Image
-                src="/images/serralheria-guarulhos.jpeg"
+                src={HERO_ABOUT_IMAGE_SRC}
                 alt="Equipe de serralheria especializada em Guarulhos"
                 fill
                 className="object-cover"

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ChevronDown, Phone } from 'lucide-react'
+import { HERO_ABOUT_IMAGE_SRC } from '@/lib/site-images'
 
 const Hero = () => {
   const stats = [
@@ -13,7 +14,7 @@ const Hero = () => {
       {/* Background Image - Otimizada para Next.js */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/serralheria-guarulhos.jpeg"
+          src={HERO_ABOUT_IMAGE_SRC}
           alt="Serralheria em Guarulhos - Trabalho com metal sob medida"
           fill
           className="object-cover"

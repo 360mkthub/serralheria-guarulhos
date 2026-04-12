@@ -7,6 +7,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { X } from 'lucide-react'
 import type { BairroData } from '@/lib/bairros-data'
+import { HERO_ABOUT_IMAGE_SRC } from '@/lib/site-images'
 
 interface BairroTemplateProps {
   bairro: BairroData
@@ -58,7 +59,7 @@ export default function BairroTemplate({ bairro }: BairroTemplateProps) {
         <div className="container-custom"><div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img src="/images/serralheria-guarulhos.jpeg" alt={`Equipe de serralheria em ${bairro.nome}`} className="w-full h-auto" loading="lazy" />
+              <img src={HERO_ABOUT_IMAGE_SRC} alt={`Equipe de serralheria em ${bairro.nome}`} className="w-full h-auto" loading="lazy" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white rounded-xl p-6 shadow-xl">
               <div className="text-lg font-bold">Projetos</div><div className="text-sm opacity-90">sob medida</div>
