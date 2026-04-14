@@ -5,7 +5,7 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-XXXXXXX'
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-MHRMS653'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://serralheriaemguarulhos.com'),
