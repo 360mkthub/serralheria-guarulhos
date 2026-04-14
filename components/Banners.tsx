@@ -28,6 +28,7 @@ export const BannerTop = () => {
           <Link
             href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es."
             target="_blank"
+            rel="noopener noreferrer nofollow"
             className="px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors flex items-center gap-2"
           >
             <Phone className="w-5 h-5" />
@@ -86,7 +87,7 @@ export const BannerBottom = () => {
           <a
             href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es."
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" />

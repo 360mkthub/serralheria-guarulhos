@@ -120,7 +120,7 @@ export default function EscadasPage() {
               <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-6">DESIGN E SEGURANCA</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">Escadas, Corrimaos e Manutencao em Guarulhos <span className="text-yellow-400">| Aco Inox, Aluminio e Ferro</span></h1>
               <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">Procura por escadas metalicas e corrimaos em Guarulhos com acabamento profissional e seguranca certificada? Fabricamos escadas caracol, retas e com patamar, alem de corrimaos e guarda-corpos em aco inox, aluminio e ferro.</p>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg">
                 <Phone size={20} className="mr-2" />SOLICITAR ORCAMENTO GRATIS
               </a>
             </div>
@@ -189,7 +189,7 @@ export default function EscadasPage() {
               </div>
             </div>
             <div className="text-center mt-12">
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
                 <Phone size={20} />SOLICITAR ORCAMENTO
               </a>
             </div>

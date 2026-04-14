@@ -137,7 +137,7 @@ export default function PortoesPage() {
               <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
                 Procurando portoes automaticos em Guarulhos que unam seguranca, durabilidade e preco justo? Somos especialistas na fabricacao, instalacao e manutencao de portoes basculantes, deslizantes e pivotantes, atendendo residencias, condominios e industrias em toda a regiao de Guarulhos.
               </p>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg">
                 <Phone size={20} className="mr-2" />
                 SOLICITAR ORCAMENTO GRATIS
               </a>
@@ -211,7 +211,7 @@ export default function PortoesPage() {
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-center">
               <h2 className="text-3xl font-bold text-white mb-4">Investimento e Orcamento sem Compromisso</h2>
               <p className="text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">O preco de portao automatico em Guarulhos varia conforme o modelo. Entre em contato, solicite visita tecnica gratuita e receba orcamento detalhado em ate 24 horas.</p>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
                 <Phone size={20} /> SOLICITAR ORCAMENTO GRATIS
               </a>
             </div>

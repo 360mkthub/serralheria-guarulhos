@@ -158,7 +158,7 @@ export default function QuemSomosPage() {
                       ))}
                     </div>
                   </div>
-                  <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero falar com o Mário." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+                  <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero falar com o Mário." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
                     <Phone size={20} className="mr-2" />Falar com o Mario
                   </a>
                 </div>

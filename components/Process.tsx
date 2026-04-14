@@ -95,7 +95,7 @@ const Process = () => {
           <a
             href="https://wa.me/5551991606477?text=Quero%20agendar%20uma%20visita%20tecnica"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-all shadow-lg"
           >
             Agendar Visita Técnica Grátis

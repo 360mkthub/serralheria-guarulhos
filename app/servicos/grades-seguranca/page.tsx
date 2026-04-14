@@ -128,7 +128,7 @@ export default function GradesPage() {
               <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
                 Busca por grades de protecao em Guarulhos para garantir a seguranca da sua familia ou empresa? Fabricamos e instalamos grades de ferro galvanizado, aluminio e aco inox, com acabamento profissional e conforme as normas tecnicas.
               </p>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg">
                 <Phone size={20} className="mr-2" />
                 SOLICITAR ORCAMENTO GRATIS
               </a>
@@ -189,7 +189,7 @@ export default function GradesPage() {
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Instalacao de Grades em Apartamentos e Sacadas</h2>
             <p className="text-blue-100 max-w-3xl mx-auto mb-8">Utilizamos fixacoes especificas para cada tipo de parede com buchas de expansao de alta resistencia. Atendemos prazos de ate 48 horas.</p>
-            <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+            <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
               <Phone size={20} />SOLICITAR ORCAMENTO
             </a>
           </div>

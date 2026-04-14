@@ -86,7 +86,7 @@ export default function ContatoPage() {
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Falar com o Especialista Agora</h2>
                 <p className="text-green-100 mb-8 text-lg">Clique no botao abaixo e converse diretamente com a gente pelo WhatsApp. Atendimento rapido em todos os bairros de Guarulhos!</p>
-                <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 px-8 py-5 bg-white text-green-600 font-bold text-lg rounded-xl hover:bg-gray-100 transition-colors shadow-lg">
+                <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-3 px-8 py-5 bg-white text-green-600 font-bold text-lg rounded-xl hover:bg-gray-100 transition-colors shadow-lg">
                   INICIAR CONVERSA NO WHATSAPP
                 </a>
                 <div className="mt-6 flex items-center justify-center gap-2 text-green-100">
@@ -170,7 +170,7 @@ export default function ContatoPage() {
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Nao Espere Mais!</h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Orcamento gratis em ate 24h. Atendimento rapido em todos os bairros de Guarulhos.</p>
-            <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors">
+            <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors">
               <MessageCircle className="w-5 h-5" />FALAR NO WHATSAPP
             </a>
           </div>

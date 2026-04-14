@@ -21,7 +21,7 @@ export default function TermosPage() {
           <section className="mb-8"><h2 className="text-xl font-bold text-gray-900 mb-4">7. Contato</h2><p className="text-gray-600 mb-4">Se voce tiver alguma duvida sobre estes Termos de Uso, entre em contato conosco atraves do formulario de contato em nosso site ou pelo WhatsApp.</p></section>
         </div>
       </div></div></main>
-      <footer className="bg-gray-900 text-white py-8"><div className="container-custom"><div className="flex flex-col items-center gap-4"><p className="text-gray-500 text-sm text-center">{'© '}{new Date().getFullYear()}{' Serralheria em Guarulhos. Todos os direitos reservados.'}</p><p className="text-gray-500 text-sm text-center">{'Site desenvolvido por '}<a href="https://360mkthub.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 transition-colors">360MKTHub</a></p></div></div></footer>
+      <footer className="bg-gray-900 text-white py-8"><div className="container-custom"><div className="flex flex-col items-center gap-4"><p className="text-gray-500 text-sm text-center">{'© '}{new Date().getFullYear()}{' Serralheria em Guarulhos. Todos os direitos reservados.'}</p><p className="text-gray-500 text-sm text-center">{'Site desenvolvido por '}<a href="https://360mkthub.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-400 hover:text-blue-300 transition-colors">360MKTHub</a></p></div></div></footer>
     </div>
   )
 }

@@ -106,7 +106,7 @@ export default function LocalidadesPage() {
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Atendemos <span className="text-yellow-400">Todos os Bairros</span> de Guarulhos</h1>
               <p className="text-xl text-blue-100 leading-relaxed mb-8">Nossa serralheria atende em todos os bairros de Guarulhos e regiao metropolitana. Onde voce estiver, levamos qualidade e garantia ate voce com atendimento rapido.</p>
-              <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+              <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
                 <Phone className="w-5 h-5" />Solicitar Orcamento Gratis
               </a>
             </div>
@@ -158,7 +158,7 @@ export default function LocalidadesPage() {
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Qual e o Seu Bairro em Guarulhos?</h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Atendemos em todos os bairros de Guarulhos com a mesma qualidade e rapidez. Entre em contato e descubra como podemos ajudar!</p>
-            <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+            <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
               <Phone className="w-5 h-5" />Falar no WhatsApp
             </a>
           </div>

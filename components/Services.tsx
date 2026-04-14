@@ -97,7 +97,7 @@ const Services = () => {
                   <a
                     href="https://wa.me/5551991606477?text=Quero%20um%20orcamento%20para%20servicos"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="flex-1 px-4 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm text-center"
                   >
                     Solicitar Orçamento
@@ -120,7 +120,7 @@ const Services = () => {
           <a
             href="https://wa.me/5551991606477?text=Quero%20falar%20com%20um%20especialista"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="inline-flex px-8 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-all"
           >
             FALAR COM ESPECIALISTA

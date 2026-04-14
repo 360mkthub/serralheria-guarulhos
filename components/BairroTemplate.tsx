@@ -46,7 +46,7 @@ export default function BairroTemplate({ bairro }: BairroTemplateProps) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">{bairro.h1}</h1>
           <div className="space-y-4 text-lg text-blue-100">{bairro.intro.map((text, i) => (<p key={i}>{text}</p>))}</div>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center justify-center gap-2">
+            <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center justify-center gap-2">
               <Phone className="w-5 h-5" />Solicitar Orcamento Gratis
             </a>
             <Link href="/servicos/portoes-automaticos" className="px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-colors inline-flex items-center justify-center gap-2">Ver Servicos</Link>
@@ -180,7 +180,7 @@ export default function BairroTemplate({ bairro }: BairroTemplateProps) {
             </div>
             <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-8 md:p-12 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Ainda tem duvidas? Fale conosco!</h3>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-all duration-300">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-all duration-300">
                 <MessageCircle size={20} />FALAR NO WHATSAPP
               </a>
             </div>
@@ -205,7 +205,7 @@ export default function BairroTemplate({ bairro }: BairroTemplateProps) {
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Precisa de Serralheria em {bairro.nome}?</h2>
           <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto leading-relaxed">Orcamento gratis em ate 24h. Atendimento rapido com garantia total em todos os servicos.</p>
-          <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2"><Phone className="w-5 h-5" />Falar no WhatsApp</a>
+          <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2"><Phone className="w-5 h-5" />Falar no WhatsApp</a>
         </div>
       </section>
     </>

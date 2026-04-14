@@ -126,7 +126,7 @@ export default function EstruturasPage() {
               <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
                 Precisa de estruturas metalicas em Guarulhos para seu projeto comercial, industrial ou residencial? Somos especialistas em fabricacao e montagem de galpoes, mezaninos, coberturas metalicas e estruturas sob medida.
               </p>
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2">
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
                 <Phone size={20} />SOLICITAR ORCAMENTO GRATIS
               </a>
             </div>
@@ -172,7 +172,7 @@ export default function EstruturasPage() {
               ))}
             </div>
             <div className="text-center mt-12">
-              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" className="btn-secondary text-lg inline-flex items-center gap-2"><Phone size={20} />SOLICITAR ORCAMENTO</a>
+              <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2"><Phone size={20} />SOLICITAR ORCAMENTO</a>
             </div>
           </div>
         </section>

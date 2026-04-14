@@ -48,7 +48,7 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/serralheriaemguarulhos"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Facebook"
               >
@@ -57,7 +57,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/serralheriaemguarulhos"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center hover:opacity-90 transition-opacity"
                 aria-label="Instagram"
               >
@@ -134,7 +134,7 @@ const Footer = () => {
             <a
               href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es."
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
             >
               Falar no WhatsApp
@@ -155,7 +155,7 @@ const Footer = () => {
               <a 
                 href="https://360mkthub.com/" 
                 target="_blank" 
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="text-blue-400 hover:text-blue-300 transition-colors"
               >
                 360MKTHub
