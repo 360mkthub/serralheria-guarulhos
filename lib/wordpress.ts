@@ -2,8 +2,7 @@ const WORDPRESS_GRAPHQL_URL_FALLBACK = 'https://api.serralheriaemguarulhos.com/g
 
 /** Endpoint GraphQL do WordPress (Headless). Configure `NEXT_PUBLIC_WORDPRESS_API_URL` no deploy. */
 export function getWordpressGraphqlUrl(): string {
-  const env = process.env.NEXT_PUBLIC_WORDPRESS_API_URL?.trim()
-  return env && env.length > 0 ? env : WORDPRESS_GRAPHQL_URL_FALLBACK
+  return 'https://api.serralheriaemguarulhos.com/graphql'
 }
 
 function stripHtml(html: string): string {
