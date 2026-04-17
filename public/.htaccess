@@ -1,0 +1,17 @@
+# Configurações do Motor Node.js (Phusion Passenger)
+PassengerAppRoot "/home/u236560328/domains/serralheriaemguarulhos.com/public_html"
+PassengerAppType node
+PassengerNodejs "/opt/alt/alt-nodejs20/root/usr/bin/node"
+PassengerStartupFile server.js
+PassengerBaseURI /
+
+# Regras de Redirecionamento para Rotas do Next.js
+RewriteEngine On
+RewriteBase /
+
+# Se o arquivo ou pasta existir fisicamente (como imagens/css), ele abre direto
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Se NÃO existir (como as páginas do blog), ele manda para o server.js processar
+RewriteRule ^(.*)$ server.js/$1 [L]
