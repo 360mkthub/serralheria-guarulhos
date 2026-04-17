@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params
   try {
     const post = await getPostBySlug(slug)
-    if (!post) return { title: 'Post nao encontrado' }
+    if (!post) return { title: 'Post não encontrado' }
 
     const seo = post.seo
     const description =

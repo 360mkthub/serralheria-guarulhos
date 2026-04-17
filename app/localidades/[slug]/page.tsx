@@ -66,7 +66,7 @@ export default async function BairroPage({ params }: { params: Promise<{ slug: s
       '@type': 'City', 
       name: `${bairro.nome}, Guarulhos - SP` 
     },
-    serviceType: ['Serralheria', 'Portoes Automaticos', 'Grades de Protecao', 'Estruturas Metalicas'],
+    serviceType: ['Serralheria', 'Portões automáticos', 'Grades de proteção', 'Estruturas metálicas'],
     openingHours: ['Mo-Fr 08:00-18:00', 'Sa 08:00-12:00'],
     priceRange: '$$',
   }

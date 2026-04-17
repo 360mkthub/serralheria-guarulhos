@@ -6,10 +6,10 @@ interface AuthorBoxProps {
 }
 
 const authorData = {
-  name: 'Mario Vargas',
+  name: 'Mário Vargas',
   jobTitle: 'Serralheiro Especialista',
   description:
-    'Especialista em serralheria em Guarulhos com 15 anos de experiencia em fabricacao e instalacao de portoes automaticos, grades de seguranca e estruturas metalicas. Certificado nas normas regulamentadoras NR-12, NR-18 e NR-35.',
+    'Especialista em serralheria em Guarulhos com 15 anos de experiência em fabricação e instalação de portões automáticos, grades de segurança e estruturas metálicas. Certificado nas normas regulamentadoras NR-12, NR-18 e NR-35.',
   image: '/images/serralheiro-mario-vargas-serralheria-guarulhos.jpg',
   sameAs: [
     'https://www.linkedin.com/in/mariovargas',
@@ -76,7 +76,7 @@ const AuthorBox = ({ showSchema = true }: AuthorBoxProps) => {
             <div className="flex flex-wrap items-center gap-3 mb-4">
               <span className="text-sm font-medium text-gray-700 flex items-center gap-1">
                 <Award className="w-4 h-4 text-yellow-500" />
-                {'Certificacoes:'}
+                {'Certificações:'}
               </span>
               {authorData.certifications.map((cert) => (
                 <span
@@ -91,11 +91,11 @@ const AuthorBox = ({ showSchema = true }: AuthorBoxProps) => {
             <div className="flex flex-wrap gap-4 text-sm">
               <span className="flex items-center gap-1 text-gray-600">
                 <Check className="w-4 h-4 text-green-500" />
-                {authorData.experience} de experiencia
+                {authorData.experience} de experiência
               </span>
               <span className="flex items-center gap-1 text-gray-600">
                 <Check className="w-4 h-4 text-green-500" />
-                Guarulhos e regiao
+                Guarulhos e região
               </span>
             </div>
           </div>

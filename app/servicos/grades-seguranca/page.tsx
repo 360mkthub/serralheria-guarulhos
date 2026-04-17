@@ -14,30 +14,30 @@ export const metadata: Metadata = {
   },
   description:
     'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
-  keywords: ['grades de protecao Guarulhos', 'grade de ferro', 'grade de aluminio', 'grade de inox', 'gradil eletrofundido'],
+  keywords: ['grades de proteção Guarulhos', 'grade de ferro', 'grade de alumínio', 'grade de inox', 'gradil eletrofundido'],
   alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
   openGraph: {
     title: 'Grades de Proteção em Guarulhos | Fabricação Sob Medida',
     description:
       'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
     url: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca',
-    images: [{ url: 'https://serralheriaemguarulhos.com/images/grade-proteçao-janela-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Grades de protecao em Guarulhos' }],
+    images: [{ url: 'https://serralheriaemguarulhos.com/images/grade-proteçao-janela-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Grades de proteção em Guarulhos' }],
     locale: 'pt_BR', 
     type: 'website',
   },
 }
 
 const faqs = [
-  { id: '1', question: 'Quanto custa grade de protecao para janela em Guarulhos?', answer: 'Os valores variam de acordo com o tamanho do projeto e material escolhido. Entre em contato e solicite um orcamento que lhe retornaremos o mais breve possivel.' },
-  { id: '2', question: 'Qual material e melhor para grade: ferro ou aluminio?', answer: 'O ferro galvanizado oferece maior resistencia mecanica e e mais barato. O aluminio nao enferruja, e mais leve e tem menor manutencao a longo prazo. A escolha depende do orcamento e local de instalacao.' },
-  { id: '3', question: 'Como instalar grade de protecao em apartamento?', answer: 'A instalacao requer fixacao com buchas de expansao na alvenaria ou concreto, respeitando as normas do condominio.' },
-  { id: '4', question: 'Qual a diferenca entre grade e gradil eletrofundido?', answer: 'A grade e indicada para protecao de janelas e portas em residencias. O gradil eletrofundido e utilizado para cercamentos de grandes areas comerciais e industriais, oferecendo maior robustez estrutural.' },
-  { id: '5', question: 'As grades de protecao sao realmente seguras contra invasao?', answer: 'Sim, quando fabricadas com ferro macico ou aco de espessura adequada (minimo 20x20mm) e instaladas com fixacao correta, as grades sao barreiras eficazes contra arrombamentos.' },
-  { id: '6', question: 'Posso instalar grade em apartamento alugado?', answer: 'Sim, desde que autorizado pelo proprietario e condominio. Oferecemos opcoes com fixacao reversivel que nao danificam a estrutura.' },
-  { id: '7', question: 'Qual a garantia das grades instaladas?', answer: 'Oferecemos garantia de 1 ano contra defeitos de fabricacao e instalacao, alem de manutencao preventiva.' },
-  { id: '8', question: 'Voces atendem quais bairros de Guarulhos?', answer: 'Atendemos Centro, Macedo, Vila Galvao, Cumbica, Vila Augusta, Jardim Maia, Ponte Grande, Gopoúva, Picanco e toda a Grande Sao Paulo.' },
-  { id: '9', question: 'E necessario pintar grades de ferro galvanizado?', answer: 'O galvanizado a fogo ja oferece protecao anticorrosiva. A pintura e opcional, mas aumenta a durabilidade estetica do produto.' },
-  { id: '10', question: 'Qual o prazo de entrega para grades sob medida?', answer: 'O prazo depende da complexidade do projeto e quantidade solicitada. Entre em contato e solicite o seu orcamento.' },
+  { id: '1', question: 'Quanto custa grade de proteção para janela em Guarulhos?', answer: 'Os valores variam de acordo com o tamanho do projeto e material escolhido. Entre em contato e solicite um orçamento que lhe retornaremos o mais breve possível.' },
+  { id: '2', question: 'Qual material é melhor para grade: ferro ou alumínio?', answer: 'O ferro galvanizado oferece maior resistência mecânica e é mais barato. O alumínio não enferruja, é mais leve e tem menor manutenção a longo prazo. A escolha depende do orçamento e local de instalação.' },
+  { id: '3', question: 'Como instalar grade de proteção em apartamento?', answer: 'A instalação requer fixação com buchas de expansão na alvenaria ou concreto, respeitando as normas do condomínio.' },
+  { id: '4', question: 'Qual a diferença entre grade e gradil eletrofundido?', answer: 'A grade é indicada para proteção de janelas e portas em residências. O gradil eletrofundido é utilizado para cercamentos de grandes áreas comerciais e industriais, oferecendo maior robustez estrutural.' },
+  { id: '5', question: 'As grades de proteção são realmente seguras contra invasão?', answer: 'Sim, quando fabricadas com ferro maciço ou aço de espessura adequada (mínimo 20x20mm) e instaladas com fixação correta, as grades são barreiras eficazes contra arrombamentos.' },
+  { id: '6', question: 'Posso instalar grade em apartamento alugado?', answer: 'Sim, desde que autorizado pelo proprietário e condomínio. Oferecemos opções com fixação reversível que não danificam a estrutura.' },
+  { id: '7', question: 'Qual a garantia das grades instaladas?', answer: 'Oferecemos garantia de 1 ano contra defeitos de fabricação e instalação, além de manutenção preventiva.' },
+  { id: '8', question: 'Vocês atendem quais bairros de Guarulhos?', answer: 'Atendemos Centro, Macedo, Vila Galvão, Cumbica, Vila Augusta, Jardim Maia, Ponte Grande, Gopoúva, Picanço e toda a Grande São Paulo.' },
+  { id: '9', question: 'É necessário pintar grades de ferro galvanizado?', answer: 'O galvanizado a fogo já oferece proteção anticorrosiva. A pintura é opcional, mas aumenta a durabilidade estética do produto.' },
+  { id: '10', question: 'Qual o prazo de entrega para grades sob medida?', answer: 'O prazo depende da complexidade do projeto e quantidade solicitada. Entre em contato e solicite o seu orçamento.' },
 ]
 
 const breadcrumbSchema = {
@@ -45,8 +45,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Servicos', item: 'https://serralheriaemguarulhos.com/servicos' },
-    { '@type': 'ListItem', position: 3, name: 'Grades de Seguranca', item: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
+    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos' },
+    { '@type': 'ListItem', position: 3, name: 'Grades de segurança', item: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
   ],
 }
 
@@ -73,11 +73,11 @@ const jsonLd = {
     { 
       '@type': 'Service', 
       '@id': 'https://serralheriaemguarulhos.com/servicos/grades-seguranca/#service', 
-      name: 'Grades de Protecao e Seguranca em Guarulhos', 
-      description: 'Fabricacao e instalacao de grades de ferro galvanizado, aluminio e aco inox em Guarulhos', 
+      name: 'Grades de proteção e segurança em Guarulhos', 
+      description: 'Fabricação e instalação de grades de ferro galvanizado, alumínio e aço inox em Guarulhos', 
       provider: { '@id': 'https://serralheriaemguarulhos.com/#localbusiness' }, 
       areaServed: { '@type': 'City', name: 'Guarulhos' }, 
-      serviceType: ['Grade de Ferro Galvanizado', 'Grade de Aluminio', 'Grade de Aco Inox', 'Gradil Eletrofundido'] 
+      serviceType: ['Grade de ferro galvanizado', 'Grade de alumínio', 'Grade de aço inox', 'Gradil eletrofundido'] 
     },
     { 
       '@type': 'FAQPage', 
@@ -108,8 +108,8 @@ const blogLinks = [
 
 export default function GradesPage() {
   const breadcrumbItems = [
-    { label: 'Servicos', href: '/servicos' }, 
-    { label: 'Grades de Seguranca', href: undefined }
+    { label: 'Serviços', href: '/servicos' }, 
+    { label: 'Grades de segurança', href: undefined }
   ]
 
   return (
@@ -120,21 +120,21 @@ export default function GradesPage() {
       <main>
         <section className="relative min-h-[60vh] flex items-center pt-24">
           <div className="absolute inset-0 z-0">
-            <img src="/images/grade-proteçao-janela-serralheria-guarulhos.jpeg" alt="Grades de protecao em Guarulhos" className="w-full h-full object-cover" />
+            <img src="/images/grade-proteçao-janela-serralheria-guarulhos.jpeg" alt="Grades de proteção em Guarulhos" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-900/80 to-blue-900/60" />
           </div>
           <div className="relative z-10 container-custom py-16">
             <div className="max-w-3xl">
-              <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-6">SEGURANCA PARA SUA FAMILIA</span>
+              <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-6">SEGURANÇA PARA SUA FAMÍLIA</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Grades de Protecao e Seguranca em Guarulhos <span className="text-yellow-400">| Ferro, Aluminio e Aco Inox</span>
+                Grades de proteção e segurança em Guarulhos <span className="text-yellow-400">| Ferro, alumínio e aço inox</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-                Busca por grades de protecao em Guarulhos para garantir a seguranca da sua familia ou empresa? Fabricamos e instalamos grades de ferro galvanizado, aluminio e aco inox, com acabamento profissional e conforme as normas tecnicas.
+                Busca por grades de proteção em Guarulhos para garantir a segurança da sua família ou empresa? Fabricamos e instalamos grades de ferro galvanizado, alumínio e aço inox, com acabamento profissional e conforme as normas técnicas.
               </p>
               <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg">
                 <Phone size={20} className="mr-2" />
-                SOLICITAR ORCAMENTO GRATIS
+                SOLICITAR ORÇAMENTO GRÁTIS
               </a>
             </div>
           </div>
@@ -143,13 +143,13 @@ export default function GradesPage() {
         <section className="section-padding bg-gray-50">
           <div className="container-custom">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tipos de Grades de Seguranca que Oferecemos</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Tipos de grades de segurança que oferecemos</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { title: 'Grade de Ferro Galvanizado', desc: 'Resistencia maxima contra invasoes. Fabricadas com tubos de aco carbono ou ferro macico, com tratamento anticorrosivo com zinco a fogo.', items: ['Alta resistencia mecanica', 'Protecao anticorrosiva'] },
-                { title: 'Grade de Aluminio', desc: 'Leveza e anticorrosao natural. Nao oxida, nao requer pintura frequente e oferece excelente relacao custo-beneficio a longo prazo.', items: ['Nao enferruja', 'Baixa manutencao'] },
-                { title: 'Grade de Aco Inox', desc: 'Sofisticacao e durabilidade premium. Resistentes a corrosao com aparencia moderna. Ideais para apartamentos de alto padrao.', items: ['Acabamento impecavel', 'Durabilidade extrema'] },
+                { title: 'Grade de ferro galvanizado', desc: 'Resistência máxima contra invasões. Fabricadas com tubos de aço carbono ou ferro maciço, com tratamento anticorrosivo com zinco a fogo.', items: ['Alta resistência mecânica', 'Proteção anticorrosiva'] },
+                { title: 'Grade de alumínio', desc: 'Leveza e anticorrosão natural. Não oxida, não requer pintura frequente e oferece excelente relação custo-benefício a longo prazo.', items: ['Não enferruja', 'Baixa manutenção'] },
+                { title: 'Grade de aço inox', desc: 'Sofisticação e durabilidade premium. Resistentes à corrosão com aparência moderna. Ideais para apartamentos de alto padrão.', items: ['Acabamento impecável', 'Durabilidade extrema'] },
               ].map((tipo) => (
                 <div key={tipo.title} className="bg-white rounded-2xl p-8 shadow-lg">
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{tipo.title}</h3>
@@ -174,10 +174,10 @@ export default function GradesPage() {
                 <img src="/images/grades-serralheria-guarulhos.jpeg" alt="Gradil eletrofundido" className="w-full h-auto" loading="lazy" />
               </div>
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Gradil Eletrofundido para Areas Industriais</h2>
-                <p className="text-gray-600 mb-6 leading-relaxed">Composto por barras chatas verticais e arames horizontais unidos por eletrofusao, oferece alta resistencia mecanica.</p>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Gradil eletrofundido para áreas industriais</h2>
+                <p className="text-gray-600 mb-6 leading-relaxed">Composto por barras chatas verticais e arames horizontais unidos por eletrofusão, oferece alta resistência mecânica.</p>
                 <ul className="space-y-3">
-                  {['Condominios logisticos e empresariais', 'Estacionamentos e parques', 'Escolas e hospitais', 'Separadores de vias'].map((item, i) => (
+                  {['Condomínios logísticos e empresariais', 'Estacionamentos e parques', 'Escolas e hospitais', 'Separadores de vias'].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <Check size={20} className="text-blue-600 flex-shrink-0 mt-1" />
                       <span className="text-gray-700">{item}</span>
@@ -191,26 +191,26 @@ export default function GradesPage() {
 
         <section className="section-padding bg-blue-900 text-white">
           <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Instalacao de Grades em Apartamentos e Sacadas</h2>
-            <p className="text-blue-100 max-w-3xl mx-auto mb-8">Utilizamos fixacoes especificas para cada tipo de parede com buchas de expansao de alta resistencia. Atendemos prazos de ate 48 horas.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Instalação de grades em apartamentos e sacadas</h2>
+            <p className="text-blue-100 max-w-3xl mx-auto mb-8">Utilizamos fixações específicas para cada tipo de parede com buchas de expansão de alta resistência. Atendemos prazos de até 48 horas.</p>
             <a href="https://wa.me/5551991606477?text=Ol%C3%A1%20!%20Vim%20do%20site%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
-              <Phone size={20} />SOLICITAR ORCAMENTO
+              <Phone size={20} />SOLICITAR ORÇAMENTO
             </a>
           </div>
         </section>
 
-        <ServiceFAQ faqs={faqs} title="Perguntas Frequentes sobre Grades de Protecao" />
+        <ServiceFAQ faqs={faqs} title="Perguntas frequentes sobre grades de proteção" />
 
         <section className="section-padding bg-gray-50">
           <div className="container-custom">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Conheca tambem nossos outros servicos</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Conheça também nossos outros serviços</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: 'Portoes Automaticos', desc: 'Basculante, deslizante e pivotante', link: '/servicos/portoes-automaticos' },
-                { title: 'Estruturas Metalicas', desc: 'Galpoes, mezaninos e coberturas', link: '/servicos/estruturas-metalicas' },
-                { title: 'Escadas e Corrimaos', desc: 'Design e seguranca para seu projeto', link: '/servicos/escadas-manutencao' },
+                { title: 'Portões automáticos', desc: 'Basculante, deslizante e pivotante', link: '/servicos/portoes-automaticos' },
+                { title: 'Estruturas metálicas', desc: 'Galpões, mezaninos e coberturas', link: '/servicos/estruturas-metalicas' },
+                { title: 'Escadas e corrimãos', desc: 'Design e segurança para seu projeto', link: '/servicos/escadas-manutencao' },
               ].map((s) => (
                 <Link key={s.link} href={s.link} className="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
                   <h3 className="font-bold text-gray-900 mb-2 group-hover:text-blue-600">{s.title}</h3>

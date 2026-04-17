@@ -12,7 +12,7 @@ export const BannerTop = () => {
             </div>
             <div>
               <p className="text-sm font-medium text-blue-100">Serralheria em Guarulhos</p>
-              <p className="text-lg font-bold">{'Portoes \u2022 Grades \u2022 Estruturas Metalicas'}</p>
+              <p className="text-lg font-bold">{'Portões \u2022 Grades \u2022 Estruturas metálicas'}</p>
             </div>
           </div>
           <div className="flex items-center gap-6 text-sm">
@@ -22,7 +22,7 @@ export const BannerTop = () => {
             </div>
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-yellow-400" />
-              <span>Garantia em Todos os Servicos</span>
+              <span>Garantia em todos os serviços</span>
             </div>
           </div>
           <Link
@@ -32,7 +32,7 @@ export const BannerTop = () => {
             className="px-6 py-3 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors flex items-center gap-2"
           >
             <Phone className="w-5 h-5" />
-            Solicitar Orcamento Gratis
+            Solicitar orçamento grátis
           </Link>
         </div>
       </div>
@@ -53,7 +53,7 @@ export const BannerMiddle = () => {
               Atendemos Todos os Bairros de Guarulhos
             </p>
             <p className="text-sm text-gray-600">
-              {'Vila Galvao \u2022 Macedo \u2022 Cumbica \u2022 Jardim Maia \u2022 Centro e mais'}
+              {'Vila Galvão \u2022 Macedo \u2022 Cumbica \u2022 Jardim Maia \u2022 Centro e mais'}
             </p>
           </div>
         </div>
@@ -81,7 +81,7 @@ export const BannerBottom = () => {
           Precisa de Serralheria em Guarulhos?
         </h3>
         <p className="text-blue-100 mb-6 text-lg">
-          Orcamento gratis em ate 24h. Atendimento rapido em todos os bairros com garantia total.
+          Orçamento grátis em até 24h. Atendimento rápido em todos os bairros com garantia total.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -97,7 +97,7 @@ export const BannerBottom = () => {
             href="/servicos/portoes-automaticos"
             className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-900 transition-colors"
           >
-            Conhecer Servicos
+            Conhecer serviços
           </Link>
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-blue-200">
@@ -105,10 +105,10 @@ export const BannerBottom = () => {
             <Shield className="w-4 h-4" /> Garantia de 5 Anos
           </span>
           <span className="flex items-center gap-2">
-            <Clock className="w-4 h-4" /> Orcamento em 24h
+            <Clock className="w-4 h-4" /> Orçamento em 24h
           </span>
           <span className="flex items-center gap-2">
-            <Star className="w-4 h-4" /> 15 Anos de Experiencia
+            <Star className="w-4 h-4" /> 15 anos de experiência
           </span>
         </div>
       </div>

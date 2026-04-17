@@ -20,37 +20,37 @@ function createBairro(nome: string, slug: string, vizinhos: string[]): BairroDat
   return {
     nome,
     slug,
-    h1: `Serralheria ${prep} ${nome} | Portoes, Grades e Estruturas Metalicas`,
-    title: `Serralheria ${prep} ${nome} Guarulhos | Portoes Automaticos com Garantia`,
-    metaDescription: `Serralheria ${prep} ${nome}, Guarulhos. Portoes automaticos, grades de seguranca e estruturas metalicas com atendimento rapido. Orcamento gratis em 24h!`,
+    h1: `Serralheria ${prep} ${nome} | Portões, grades e estruturas metálicas`,
+    title: `Serralheria ${prep} ${nome} Guarulhos | Portões automáticos com garantia`,
+    metaDescription: `Serralheria ${prep} ${nome}, Guarulhos. Portões automáticos, grades de segurança e estruturas metálicas com atendimento rápido. Orçamento grátis em 24h!`,
     intro: [
-      `Procurando por serralheria ${prep} ${nome}, Guarulhos? Somos especialistas em portoes automaticos, grades de protecao e estruturas metalicas com mais de 15 anos de experiencia atendendo o bairro ${nome} e toda a regiao.`,
-      `Nossa equipe de serralheiros qualificados oferece servicos completos de fabricacao, instalacao e manutencao, utilizando materiais de primeira linha como ferro galvanizado, aluminio e aco inox. Atendimento rapido e garantia em todos os servicos.`,
+      `Procurando por serralheria ${prep} ${nome}, Guarulhos? Somos especialistas em portões automáticos, grades de proteção e estruturas metálicas com mais de 15 anos de experiência atendendo o bairro ${nome} e toda a região.`,
+      `Nossa equipe de serralheiros qualificados oferece serviços completos de fabricação, instalação e manutenção, utilizando materiais de primeira linha como ferro galvanizado, alumínio e aço inox. Atendimento rápido e garantia em todos os serviços.`,
     ],
     servicosDestaque: [
-      'Portoes automaticos basculantes, deslizantes e pivotantes',
-      'Grades de seguranca em ferro, aluminio e aco inox',
-      'Estruturas metalicas para galpoes e mezaninos',
-      'Manutencao e reparos emergenciais',
+      'Portões automáticos basculantes, deslizantes e pivotantes',
+      'Grades de segurança em ferro, alumínio e aço inox',
+      'Estruturas metálicas para galpões e mezaninos',
+      'Manutenção e reparos emergenciais',
     ],
     diferenciais: [
-      `Atendimento rapido ${prep} ${nome} e regiao`,
-      'Orcamento gratis em ate 24 horas',
-      'Garantia de ate 5 anos nos servicos',
+      `Atendimento rápido ${prep} ${nome} e região`,
+      'Orçamento grátis em até 24 horas',
+      'Garantia de até 5 anos nos serviços',
       'Materiais de primeira qualidade',
-      'Equipe com certificacoes NR-12, NR-18 e NR-35',
-      '15 anos de experiencia em Guarulhos',
+      'Equipe com certificações NR-12, NR-18 e NR-35',
+      '15 anos de experiência em Guarulhos',
     ],
     vizinhos,
     faqs: [
-      { id: '1', question: `Quanto custa contratar uma serralheria ${prep} ${nome}?`, answer: `O preco varia conforme o tipo de servico, material utilizado e dimensoes do projeto. ${prep.charAt(0).toUpperCase() + prep.slice(1)} ${nome}, oferecemos orcamento gratis e sem compromisso. Entre em contato e receba uma proposta detalhada em ate 24h.` },
-      { id: '2', question: `Qual o prazo de entrega dos servicos ${prep} ${nome}?`, answer: `O prazo varia conforme a complexidade do projeto. Para ${prep === 'no' ? 'o' : 'a'} ${nome}, garantimos atendimento prioritario com prazos reduzidos. Portoes simples em 5-7 dias uteis, projetos maiores conforme especificacao.` },
-      { id: '3', question: `Voces atendem emergencias de portoes ${prep} ${nome}?`, answer: `Sim! Temos atendimento emergencial 24h para portoes ${prep} ${nome}. Nossos tecnicos chegam em ate 2 horas para resolver problemas como portao travado, motor queimado ou mola arrebentada.` },
-      { id: '4', question: `Qual a garantia dos servicos ${prep} ${nome}?`, answer: `Oferecemos garantia de ate 5 anos nos servicos de serralheria ${prep} ${nome}. O periodo varia conforme o tipo de servico: portoes automaticos (3 anos), grades (5 anos), estruturas (5 anos) e manutencao (6 meses).` },
-      { id: '5', question: `Voces fazem visita tecnica ${prep} ${nome}?`, answer: `Sim, realizamos visita tecnica gratuita em ${prep === 'no' ? 'todo o' : 'toda a'} ${nome}. Nosso tecnico vai ate seu endereco para avaliar o projeto, tirar medidas e apresentar a melhor solucao para sua necessidade.` },
-      { id: '6', question: `Quais materiais voces trabalham ${prep} ${nome}?`, answer: 'Trabalhamos com ferro galvanizado, aco carbono, aluminio e aco inox 304 e 316. Todos os materiais sao de primeira linha e com certificacao de qualidade. A escolha depende da aplicacao e preferencia do cliente.' },
-      { id: '7', question: `E possivel personalizar o design dos portoes ${prep} ${nome}?`, answer: 'Com certeza! Desenvolvemos projetos personalizados conforme sua preferencia. Oferecemos diversas opcoes de cores atraves da pintura eletrostatica, modelos decorativos e acabamentos especiais.' },
-      { id: '8', question: `Voces instalam motores para portoes ${prep} ${nome}?`, answer: `Sim, somos especialistas em automacao de portoes ${prep} ${nome}. Trabalhamos com as melhores marcas: PPA, Garen, Peccinin, Rossi e Nice. Instalacao completa com garantia e suporte tecnico.` },
+      { id: '1', question: `Quanto custa contratar uma serralheria ${prep} ${nome}?`, answer: `O preço varia conforme o tipo de serviço, material utilizado e dimensões do projeto. ${prep.charAt(0).toUpperCase() + prep.slice(1)} ${nome}, oferecemos orçamento grátis e sem compromisso. Entre em contato e receba uma proposta detalhada em até 24h.` },
+      { id: '2', question: `Qual o prazo de entrega dos serviços ${prep} ${nome}?`, answer: `O prazo varia conforme a complexidade do projeto. Para ${prep === 'no' ? 'o' : 'a'} ${nome}, garantimos atendimento prioritário com prazos reduzidos. Portões simples em 5-7 dias úteis, projetos maiores conforme especificação.` },
+      { id: '3', question: `Vocês atendem emergências de portões ${prep} ${nome}?`, answer: `Sim! Temos atendimento emergencial 24h para portões ${prep} ${nome}. Nossos técnicos chegam em até 2 horas para resolver problemas como portão travado, motor queimado ou mola arrebentada.` },
+      { id: '4', question: `Qual a garantia dos serviços ${prep} ${nome}?`, answer: `Oferecemos garantia de até 5 anos nos serviços de serralheria ${prep} ${nome}. O período varia conforme o tipo de serviço: portões automáticos (3 anos), grades (5 anos), estruturas (5 anos) e manutenção (6 meses).` },
+      { id: '5', question: `Vocês fazem visita técnica ${prep} ${nome}?`, answer: `Sim, realizamos visita técnica gratuita em ${prep === 'no' ? 'todo o' : 'toda a'} ${nome}. Nosso técnico vai até seu endereço para avaliar o projeto, tirar medidas e apresentar a melhor solução para sua necessidade.` },
+      { id: '6', question: `Quais materiais vocês trabalham ${prep} ${nome}?`, answer: 'Trabalhamos com ferro galvanizado, aço carbono, alumínio e aço inox 304 e 316. Todos os materiais são de primeira linha e com certificação de qualidade. A escolha depende da aplicação e preferência do cliente.' },
+      { id: '7', question: `É possível personalizar o design dos portões ${prep} ${nome}?`, answer: 'Com certeza! Desenvolvemos projetos personalizados conforme sua preferência. Oferecemos diversas opções de cores através da pintura eletrostática, modelos decorativos e acabamentos especiais.' },
+      { id: '8', question: `Vocês instalam motores para portões ${prep} ${nome}?`, answer: `Sim, somos especialistas em automação de portões ${prep} ${nome}. Trabalhamos com as melhores marcas: PPA, Garen, Peccinin, Rossi e Nice. Instalação completa com garantia e suporte técnico.` },
     ],
   }
 }
@@ -67,7 +67,7 @@ function bairroComSerp(
 
 export const bairros: BairroData[] = [
   bairroComSerp(
-    'Vila Galvao',
+    'Vila Galvão',
     'vila-galvao',
     ['Macedo', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Ponte Grande'],
     'Serralheria em Vila Galvão Guarulhos | Portões e Grades Sob Medida',
@@ -76,7 +76,7 @@ export const bairros: BairroData[] = [
   bairroComSerp(
     'Centro',
     'centro',
-    ['Vila Galvao', 'Macedo', 'Vila Rio de Janeiro', 'Ponte Grande', 'Vila Endres'],
+    ['Vila Galvão', 'Macedo', 'Vila Rio de Janeiro', 'Ponte Grande', 'Vila Endres'],
     'Serralheria no Centro de Guarulhos | Portões e Grades Sob Medida',
     'Serralheria no Centro de Guarulhos para portões automáticos, grades e estruturas metálicas. Solicite orçamento rápido pelo WhatsApp.'
   ),
@@ -90,28 +90,28 @@ export const bairros: BairroData[] = [
   bairroComSerp(
     'Jardim Maia',
     'jardim-maia',
-    ['Vila Galvao', 'Macedo', 'Vila Augusta', 'Jardim Cumbica', 'Vila Barros'],
+    ['Vila Galvão', 'Macedo', 'Vila Augusta', 'Jardim Cumbica', 'Vila Barros'],
     'Serralheria no Jardim Maia Guarulhos | Portões e Grades Sob Medida',
     'Fabricação e instalação de portões, grades e estruturas metálicas no Jardim Maia, Guarulhos. Atendimento rápido e orçamento sem complicação.'
   ),
   bairroComSerp(
     'Macedo',
     'macedo',
-    ['Vila Galvao', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Vila Rio de Janeiro'],
+    ['Vila Galvão', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Vila Rio de Janeiro'],
     'Serralheria no Macedo Guarulhos | Portões e Grades Sob Medida',
     'Portões automáticos, grades de proteção e estruturas metálicas no Macedo, Guarulhos. Fale no WhatsApp e peça seu orçamento.'
   ),
   bairroComSerp(
     'Vila Augusta',
     'vila-augusta',
-    ['Jardim Maia', 'Vila Galvao', 'Macedo', 'Jardim Cumbica', 'Parque Cecap'],
+    ['Jardim Maia', 'Vila Galvão', 'Macedo', 'Jardim Cumbica', 'Parque Cecap'],
     'Serralheria na Vila Augusta Guarulhos | Portões e Grades Sob Medida',
     'Atendimento em Vila Augusta, Guarulhos, para portões, grades e estruturas metálicas sob medida. Orçamento rápido pelo WhatsApp.'
   ),
   bairroComSerp(
     'Ponte Grande',
     'ponte-grande',
-    ['Vila Galvao', 'Centro', 'Vila Endres', 'Vila Rio de Janeiro', 'Macedo'],
+    ['Vila Galvão', 'Centro', 'Vila Endres', 'Vila Rio de Janeiro', 'Macedo'],
     'Serralheria na Ponte Grande Guarulhos | Portões e Grades Sob Medida',
     'Serralheria na Ponte Grande, Guarulhos, com fabricação sob medida de portões, grades e estruturas metálicas. Solicite orçamento.'
   ),

@@ -35,12 +35,12 @@ export default function QuemSomosPage() {
         '@id': 'https://serralheriaemguarulhos.com/quem-somos/#webpage',
         url: 'https://serralheriaemguarulhos.com/quem-somos',
         name: 'Quem Somos - Serralheria em Guarulhos',
-        description: 'Conheca a Serralheria em Guarulhos. Mais de 15 anos de experiencia em portoes, grades e estruturas.',
+        description: 'Conheça a Serralheria em Guarulhos. Mais de 15 anos de experiência em portões, grades e estruturas.',
         mainEntity: {
           '@type': 'LocalBusiness',
           '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
           name: 'Serralheria em Guarulhos',
-          description: 'Especialistas em serralheria em Guarulhos com 15 anos de experiencia',
+          description: 'Especialistas em serralheria em Guarulhos com 15 anos de experiência',
           url: 'https://serralheriaemguarulhos.com',
           telephone: '+5551991606477',
           priceRange: '$$',
@@ -63,12 +63,12 @@ export default function QuemSomosPage() {
   }
 
   const differentials = [
-    { icon: Award, title: '15 Anos de Experiencia', desc: 'Tradicao em serralheria em Guarulhos' },
-    { icon: Shield, title: 'Garantia Total', desc: 'Garantia de ate 5 anos em nossos servicos' },
-    { icon: Clock, title: 'Atendimento Rapido', desc: 'Orcamento em ate 24 horas' },
-    { icon: Users, title: 'Equipe Especializada', desc: 'Profissionais certificados e experientes' },
-    { icon: Star, title: 'Materiais de Qualidade', desc: 'Aco carbono, inox e aluminio premium' },
-    { icon: MapPin, title: 'Cobertura Total', desc: 'Todos os bairros de Guarulhos' },
+    { icon: Award, title: '15 anos de experiência', desc: 'Tradição em serralheria em Guarulhos' },
+    { icon: Shield, title: 'Garantia total', desc: 'Garantia de até 5 anos em nossos serviços' },
+    { icon: Clock, title: 'Atendimento rápido', desc: 'Orçamento em até 24 horas' },
+    { icon: Users, title: 'Equipe especializada', desc: 'Profissionais certificados e experientes' },
+    { icon: Star, title: 'Materiais de qualidade', desc: 'Aço carbono, inox e alumínio premium' },
+    { icon: MapPin, title: 'Cobertura total', desc: 'Todos os bairros de Guarulhos' },
   ]
 
   return (
@@ -82,9 +82,9 @@ export default function QuemSomosPage() {
         <section className="section-padding bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 text-white">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
-              <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-6">NOSSA HISTORIA</span>
+              <span className="inline-block px-4 py-2 bg-yellow-400 text-gray-900 text-sm font-bold rounded-full mb-6">NOSSA HISTÓRIA</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Quem Somos <span className="text-yellow-400">{'| Serralheria em Guarulhos'}</span></h1>
-              <p className="text-xl text-blue-100 leading-relaxed">Ha mais de 15 anos, a Serralheria em Guarulhos se dedica a oferecer solucoes completas em estruturas metalicas, com foco em qualidade, seguranca e satisfacao dos nossos clientes.</p>
+              <p className="text-xl text-blue-100 leading-relaxed">Há mais de 15 anos, a Serralheria em Guarulhos se dedica a oferecer soluções completas em estruturas metálicas, com foco em qualidade, segurança e satisfação dos nossos clientes.</p>
             </div>
           </div>
         </section>
@@ -93,11 +93,11 @@ export default function QuemSomosPage() {
           <div className="container-custom">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Nossa Trajetoria em <span className="text-gradient">Guarulhos</span></h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Nossa trajetória em <span className="text-gradient">Guarulhos</span></h2>
                 <div className="space-y-4 text-gray-600 leading-relaxed">
-                  <p>A Serralheria em Guarulhos nasceu da paixao pelo trabalho bem feito e do compromisso com a seguranca das familias e empresas da nossa cidade.</p>
-                  <p>Ao longo de mais de 15 anos, conquistamos a confianca de milhares de clientes. De reparos residenciais a projetos industriais, cada trabalho e realizado com dedicacao.</p>
-                  <p>Nossa equipe e formada por profissionais altamente qualificados, investindo constantemente em capacitacao e equipamentos modernos.</p>
+                  <p>A Serralheria em Guarulhos nasceu da paixão pelo trabalho bem feito e do compromisso com a segurança das famílias e empresas da nossa cidade.</p>
+                  <p>Ao longo de mais de 15 anos, conquistamos a confiança de milhares de clientes. De reparos residenciais a projetos industriais, cada trabalho é realizado com dedicação.</p>
+                  <p>Nossa equipe é formada por profissionais altamente qualificados, investindo constantemente em capacitação e equipamentos modernos.</p>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
@@ -120,26 +120,26 @@ export default function QuemSomosPage() {
                 <div className="lg:col-span-2 bg-gradient-to-br from-blue-900 to-blue-800 p-8 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-8 border-yellow-400 shadow-2xl mx-auto mb-6">
-                      <img src="/images/serralheiro-mario-vargas-serralheria-guarulhos.jpg" alt="Mario Vargas - Serralheiro Especialista em Guarulhos" className="w-full h-full object-cover" />
+                      <img src="/images/serralheiro-mario-vargas-serralheria-guarulhos.jpg" alt="Mário Vargas - Serralheiro Especialista em Guarulhos" className="w-full h-full object-cover" />
                     </div>
                   </div>
                 </div>
                 <div className="lg:col-span-3 p-8 md:p-12">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-semibold rounded-full">ESPECIALISTA</span>
-                    <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-semibold rounded-full">15 ANOS DE EXPERIENCIA</span>
+                    <span className="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm font-semibold rounded-full">15 ANOS DE EXPERIÊNCIA</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Mario Vargas</h2>
+                  <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Mário Vargas</h2>
                   <p className="text-xl text-blue-600 font-medium mb-6">Serralheiro Especialista em Guarulhos</p>
                   <div className="prose prose-lg text-gray-600 mb-8">
-                    <p>Mario Vargas e o fundador e especialista tecnico da Serralheria em Guarulhos. Com 15 anos de experiencia, ele se tornou referencia em portoes e estruturas metalicas.</p>
+                    <p>Mário Vargas é o fundador e especialista técnico da Serralheria em Guarulhos. Com 15 anos de experiência, ele se tornou referência em portões e estruturas metálicas.</p>
                   </div>
                   <div className="mb-8">
-                    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2"><Award className="w-5 h-5 text-yellow-500" />Certificacoes</h3>
+                    <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2"><Award className="w-5 h-5 text-yellow-500" />Certificações</h3>
                     <div className="grid sm:grid-cols-3 gap-4">
                       <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-green-500">
                         <p className="font-bold text-gray-900">NR-12</p>
-                        <p className="text-xs text-gray-600">Seguranca em Maquinas</p>
+                        <p className="text-xs text-gray-600">Segurança em máquinas</p>
                       </div>
                       <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-blue-500">
                         <p className="font-bold text-gray-900">NR-18</p>
@@ -154,7 +154,7 @@ export default function QuemSomosPage() {
                   <div className="mb-8">
                     <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2"><Wrench className="w-5 h-5 text-blue-600" />Especialidades</h3>
                     <div className="flex flex-wrap gap-3">
-                      {['Portoes', 'Grades', 'Estruturas', 'Solda'].map((item) => (
+                      {['Portões', 'Grades', 'Estruturas', 'Solda'].map((item) => (
                         <span key={item} className="px-4 py-2 bg-blue-50 text-blue-700 text-sm font-medium rounded-full flex items-center gap-2">
                           <Check className="w-4 h-4" />{item}
                         </span>
@@ -162,7 +162,7 @@ export default function QuemSomosPage() {
                     </div>
                   </div>
                   <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero falar com o Mário." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
-                    <Phone size={20} className="mr-2" />Falar com o Mario
+                    <Phone size={20} className="mr-2" />Falar com o Mário
                   </a>
                 </div>
               </div>
@@ -173,10 +173,10 @@ export default function QuemSomosPage() {
         <section className="section-padding bg-blue-900 text-white">
           <div className="container-custom text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto para seu Projeto?</h2>
-            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Orcamento gratis em ate 24h!</p>
+            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Orçamento grátis em até 24h!</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/" className="px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors inline-flex items-center justify-center gap-2">
-                <Phone size={20} />Solicitar Orcamento
+                <Phone size={20} />Solicitar orçamento
               </Link>
             </div>
           </div>

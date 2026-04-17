@@ -56,8 +56,8 @@ export default function ContatoPage() {
     ]
   }
 
-  const benefits = ['Orcamento gratis em ate 24h', 'Atendimento em todos os bairros', 'Garantia em todos os servicos', '15 anos de experiencia']
-  const bairros = ['Vila Galvao', 'Macedo', 'Cumbica', 'Jardim Maia', 'Centro', 'Vila Augusta', 'Ponte Grande', 'Gopoúva']
+  const benefits = ['Orçamento grátis em até 24h', 'Atendimento em todos os bairros', 'Garantia em todos os serviços', '15 anos de experiência']
+  const bairros = ['Vila Galvão', 'Macedo', 'Cumbica', 'Jardim Maia', 'Centro', 'Vila Augusta', 'Ponte Grande', 'Gopoúva']
 
   return (
     <div className="min-h-screen bg-white">
@@ -74,7 +74,7 @@ export default function ContatoPage() {
                 <MapPin className="w-4 h-4 inline mr-1" />ESTAMOS AQUI PARA AJUDAR
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Entre em <span className="text-yellow-400">Contato</span></h1>
-              <p className="text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto">Precisa de um orcamento para serralheria em Guarulhos? Fale diretamente conosco pelo WhatsApp e receba atendimento personalizado em minutos.</p>
+              <p className="text-xl text-blue-100 leading-relaxed max-w-2xl mx-auto">Precisa de um orçamento para serralheria em Guarulhos? Fale diretamente conosco pelo WhatsApp e receba atendimento personalizado em minutos.</p>
             </div>
           </div>
         </section>
@@ -86,8 +86,8 @@ export default function ContatoPage() {
                 <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <MessageCircle className="w-10 h-10" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">Falar com o Especialista Agora</h2>
-                <p className="text-green-100 mb-8 text-lg">Clique no botao abaixo e converse diretamente com a gente pelo WhatsApp. Atendimento rapido em todos os bairros de Guarulhos!</p>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Falar com o especialista agora</h2>
+                <p className="text-green-100 mb-8 text-lg">Clique no botão abaixo e converse diretamente com a gente pelo WhatsApp. Atendimento rápido em todos os bairros de Guarulhos!</p>
                 <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-3 px-8 py-5 bg-white text-green-600 font-bold text-lg rounded-xl hover:bg-gray-100 transition-colors shadow-lg">
                   INICIAR CONVERSA NO WHATSAPP
                 </a>
@@ -107,11 +107,11 @@ export default function ContatoPage() {
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
                   <Clock className="w-7 h-7 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Horario de Atendimento</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Horário de atendimento</h3>
                 <div className="space-y-2 text-gray-600">
-                  <p className="flex justify-between"><span>Segunda a Sexta</span><span className="font-medium">8h as 18h</span></p>
-                  <p className="flex justify-between"><span>Sabado</span><span className="font-medium">8h as 12h</span></p>
-                  <p className="flex justify-between text-green-600"><span>Emergencias</span><span className="font-medium">24h</span></p>
+                  <p className="flex justify-between"><span>Segunda a sexta</span><span className="font-medium">8h às 18h</span></p>
+                  <p className="flex justify-between"><span>Sábado</span><span className="font-medium">8h às 12h</span></p>
+                  <p className="flex justify-between text-green-600"><span>Emergências</span><span className="font-medium">24h</span></p>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ export default function ContatoPage() {
                   <MapPin className="w-7 h-7 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">Onde Atendemos</h3>
-                <p className="text-gray-600 mb-4">Atendemos todos os bairros de Guarulhos e regiao metropolitana:</p>
+                <p className="text-gray-600 mb-4">Atendemos todos os bairros de Guarulhos e região metropolitana:</p>
                 <div className="flex flex-wrap gap-2">
                   {bairros.map((b) => (
                     <span key={b} className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded-full">{b}</span>
@@ -133,7 +133,7 @@ export default function ContatoPage() {
                 <div className="w-14 h-14 bg-yellow-100 rounded-xl flex items-center justify-center mb-6">
                   <Check className="w-7 h-7 text-yellow-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Por que Nos Escolher?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Por que nos escolher?</h3>
                 <ul className="space-y-3">
                   {benefits.map((b, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-600">
@@ -149,14 +149,14 @@ export default function ContatoPage() {
         <section className="section-padding bg-white">
           <div className="container-custom">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nossos Servicos</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nossos serviços</h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: 'Portoes Automaticos', desc: 'Basculante, deslizante e pivotante', link: '/servicos/portoes-automaticos' }, 
-                { title: 'Grades de Seguranca', desc: 'Ferro, aluminio e aco inox', link: '/servicos/grades-seguranca' }, 
-                { title: 'Estruturas Metalicas', desc: 'Galpoes, mezaninos e coberturas', link: '/servicos/estruturas-metalicas' }, 
-                { title: 'Escadas e Corrimaos', desc: 'Design e seguranca', link: '/servicos/escadas-manutencao' }
+                { title: 'Portões automáticos', desc: 'Basculante, deslizante e pivotante', link: '/servicos/portoes-automaticos' }, 
+                { title: 'Grades de segurança', desc: 'Ferro, alumínio e aço inox', link: '/servicos/grades-seguranca' }, 
+                { title: 'Estruturas metálicas', desc: 'Galpões, mezaninos e coberturas', link: '/servicos/estruturas-metalicas' }, 
+                { title: 'Escadas e corrimãos', desc: 'Design e segurança', link: '/servicos/escadas-manutencao' }
               ].map((s) => (
                 <Link key={s.link} href={s.link} className="group bg-gray-50 rounded-2xl p-6 hover:bg-blue-50 hover:shadow-lg transition-all">
                   <h3 className="font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{s.title}</h3>
@@ -170,8 +170,8 @@ export default function ContatoPage() {
 
         <section className="section-padding bg-blue-900 text-white">
           <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Nao Espere Mais!</h2>
-            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Orcamento gratis em ate 24h. Atendimento rapido em todos os bairros de Guarulhos.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Não espere mais!</h2>
+            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Orçamento grátis em até 24h. Atendimento rápido em todos os bairros de Guarulhos.</p>
             <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero mais informações." target="_blank" rel="noopener noreferrer nofollow" className="inline-flex items-center gap-2 px-8 py-4 bg-yellow-400 text-gray-900 font-bold rounded-lg hover:bg-yellow-500 transition-colors">
               <MessageCircle className="w-5 h-5" />FALAR NO WHATSAPP
             </a>

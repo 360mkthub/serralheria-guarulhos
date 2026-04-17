@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 }
 
 const bairros = [
-  { nome: 'Vila Galvao', slug: 'vila-galvao' }, 
+  { nome: 'Vila Galvão', slug: 'vila-galvao' }, 
   { nome: 'Macedo', slug: 'macedo' }, 
   { nome: 'Jardim Maia', slug: 'jardim-maia' }, 
   { nome: 'Vila Augusta', slug: 'vila-augusta' }, 
@@ -108,9 +108,9 @@ export default function LocalidadesPage() {
                 <MapPin className="w-4 h-4 inline mr-1" />COBERTURA COMPLETA
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Atendemos <span className="text-yellow-400">Todos os Bairros</span> de Guarulhos</h1>
-              <p className="text-xl text-blue-100 leading-relaxed mb-8">Nossa serralheria atende em todos os bairros de Guarulhos e regiao metropolitana. Onde voce estiver, levamos qualidade e garantia ate voce com atendimento rapido.</p>
+              <p className="text-xl text-blue-100 leading-relaxed mb-8">Nossa serralheria atende em todos os bairros de Guarulhos e região metropolitana. Onde você estiver, levamos qualidade e garantia até você com atendimento rápido.</p>
               <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
-                <Phone className="w-5 h-5" />Solicitar Orcamento Gratis
+                <Phone className="w-5 h-5" />Solicitar orçamento grátis
               </a>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default function LocalidadesPage() {
           <div className="container-custom">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Bairros de <span className="text-gradient">Guarulhos</span> que Atendemos</h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">Clique no seu bairro para ver informacoes especificas sobre nossos servicos de serralheria na sua regiao.</p>
+              <p className="text-gray-600 max-w-2xl mx-auto">Clique no seu bairro para ver informações específicas sobre nossos serviços de serralheria na sua região.</p>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               {bairros.map((b) => (
@@ -140,10 +140,10 @@ export default function LocalidadesPage() {
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { title: 'Atendimento Rapido', desc: 'Chegamos em minutos em qualquer bairro' }, 
-                { title: 'Orcamento Gratis', desc: 'Sem compromisso em ate 24 horas' }, 
-                { title: 'Garantia Total', desc: 'Ate 5 anos em todos os servicos' }, 
-                { title: '15 Anos de Experiencia', desc: 'Tradicao em Guarulhos' }
+                { title: 'Atendimento rápido', desc: 'Chegamos em minutos em qualquer bairro' }, 
+                { title: 'Orçamento grátis', desc: 'Sem compromisso em até 24 horas' }, 
+                { title: 'Garantia total', desc: 'Até 5 anos em todos os serviços' }, 
+                { title: '15 anos de experiência', desc: 'Tradição em Guarulhos' }
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 shadow-sm text-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -159,7 +159,7 @@ export default function LocalidadesPage() {
 
         <section className="section-padding bg-blue-900 text-white">
           <div className="container-custom text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Qual e o Seu Bairro em Guarulhos?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Qual é o seu bairro em Guarulhos?</h2>
             <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">Atendemos em todos os bairros de Guarulhos com a mesma qualidade e rapidez. Entre em contato e descubra como podemos ajudar!</p>
             <a href="https://wa.me/5551991606477?text=Olá! Vim do site e quero um orçamento." target="_blank" rel="noopener noreferrer nofollow" className="btn-secondary text-lg inline-flex items-center gap-2">
               <Phone className="w-5 h-5" />Falar no WhatsApp

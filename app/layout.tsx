@@ -10,17 +10,17 @@ const GTM_ID = 'GTM-MHRMS653'
 export const metadata: Metadata = {
   metadataBase: new URL('https://serralheriaemguarulhos.com'),
   title: {
-    default: 'Serralheria em Guarulhos | Portoes Automaticos, Grades e Estruturas Metalicas',
+    default: 'Serralheria em Guarulhos | Portões automáticos, grades e estruturas metálicas',
     template: '%s | Serralheria em Guarulhos',
   },
   description:
-    'Serralheria em Guarulhos com mais de 15 anos de experiencia. Portoes automaticos, grades de protecao, estruturas metalicas e coberturas. Orcamento gratis em 24h!',
+    'Serralheria em Guarulhos com mais de 15 anos de experiência. Portões automáticos, grades de proteção, estruturas metálicas e coberturas. Orçamento grátis em 24h!',
   keywords: [
     'serralheria em Guarulhos',
     'serralheria Guarulhos',
-    'portoes automaticos Guarulhos',
-    'grades de protecao Guarulhos',
-    'estruturas metalicas Guarulhos',
+    'portões automáticos Guarulhos',
+    'grades de proteção Guarulhos',
+    'estruturas metálicas Guarulhos',
     'serralheiro Guarulhos',
   ],
   openGraph: {
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     url: 'https://serralheriaemguarulhos.com',
     siteName: 'Serralheria em Guarulhos',
-    title: 'Serralheria em Guarulhos | Portoes Automaticos, Grades e Estruturas Metalicas',
+    title: 'Serralheria em Guarulhos | Portões automáticos, grades e estruturas metálicas',
     description:
-      'Serralheria em Guarulhos com mais de 15 anos de experiencia. Orcamento gratis em 24h!',
+      'Serralheria em Guarulhos com mais de 15 anos de experiência. Orçamento grátis em 24h!',
     images: [
       {
         url: '/images/serralheria-guarulhos.jpeg',

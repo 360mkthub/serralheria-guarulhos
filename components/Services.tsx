@@ -95,7 +95,7 @@ const Services = () => {
 
                 <div className="flex gap-3">
                   <a
-                    href="https://wa.me/5551991606477?text=Quero%20um%20orcamento%20para%20servicos"
+                    href="https://wa.me/5551991606477?text=Quero%20um%20or%C3%A7amento%20para%20servi%C3%A7os"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="flex-1 px-4 py-2 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors text-sm text-center"
