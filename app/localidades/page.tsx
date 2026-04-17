@@ -8,12 +8,15 @@ import { BannerTop } from '@/components/Banners'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Localidades Atendidas | Serralheria em Guarulhos - Todos os Bairros',
-  description: 'Serralheria em Guarulhos atendendo todos os bairros: Vila Galvao, Macedo, Jardim Maia, Centro e mais. Portoes automaticos, grades e estruturas metalicas com garantia.',
+  title: {
+    absolute: 'Serralheria em Guarulhos | Atendimento em Todos os Bairros',
+  },
+  description:
+    'Atendemos Vila Galvão, Centro, Jardim Maia, Macedo e outros bairros de Guarulhos com portões, grades e estruturas metálicas sob medida.',
   alternates: { canonical: 'https://serralheriaemguarulhos.com/localidades' },
   openGraph: { 
-    title: 'Localidades Atendidas | Serralheria em Guarulhos', 
-    description: 'Atendemos todos os bairros de Guarulhos.', 
+    title: 'Serralheria em Guarulhos | Atendimento em Todos os Bairros', 
+    description: 'Atendemos Vila Galvão, Centro, Jardim Maia, Macedo e outros bairros de Guarulhos com portões, grades e estruturas metálicas sob medida.', 
     url: 'https://serralheriaemguarulhos.com/localidades', 
     locale: 'pt_BR', 
     type: 'website' 

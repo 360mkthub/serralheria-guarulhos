@@ -8,12 +8,14 @@ import { BannerTop } from '@/components/Banners'
 import Breadcrumbs, { generateBreadcrumbSchema } from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Contato | Serralheria em Guarulhos - Fale Conosco',
-  description: 'Entre em contato com a Serralheria em Guarulhos. Orcamento gratis em ate 24h. Atendemos todos os bairros de Guarulhos e regiao.',
+  title: {
+    absolute: 'Contato | Solicite Orçamento de Serralheria em Guarulhos',
+  },
+  description: 'Fale agora pelo WhatsApp e solicite orçamento para portões, grades e estruturas metálicas em Guarulhos. Atendimento rápido.',
   alternates: { canonical: 'https://serralheriaemguarulhos.com/contato' },
   openGraph: { 
-    title: 'Contato | Serralheria em Guarulhos', 
-    description: 'Fale com a Serralheria em Guarulhos. Orcamento gratis em ate 24h.', 
+    title: 'Contato | Solicite Orçamento de Serralheria em Guarulhos', 
+    description: 'Fale agora pelo WhatsApp e solicite orçamento para portões, grades e estruturas metálicas em Guarulhos. Atendimento rápido.', 
     url: 'https://serralheriaemguarulhos.com/contato', 
     locale: 'pt_BR', 
     type: 'website' 

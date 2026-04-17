@@ -9,13 +9,17 @@ import ServiceFAQ from '@/components/ServiceFAQ'
 import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Estruturas Metalicas em Guarulhos | Galpoes, Mezaninos e Coberturas',
-  description: 'Estruturas metalicas em Guarulhos. Galpoes, mezaninos, coberturas e telhados industriais. Projetos sob medida com garantia. Orcamento gratis!',
+  title: {
+    absolute: 'Estruturas Metálicas em Guarulhos | Coberturas, Mezaninos e Galpões',
+  },
+  description:
+    'Projetos de estruturas metálicas em Guarulhos para coberturas, mezaninos e galpões. Fabricação sob medida e atendimento rápido.',
   keywords: ['estruturas metalicas Guarulhos', 'galpao metalico', 'mezanino', 'cobertura metalica', 'telhado industrial'],
   alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas' },
   openGraph: {
-    title: 'Estruturas Metalicas em Guarulhos | Galpoes e Coberturas',
-    description: 'Estruturas metalicas em Guarulhos. Galpoes, mezaninos e coberturas com engenharia certificada. Solicite seu orcamento gratis!',
+    title: 'Estruturas Metálicas em Guarulhos | Coberturas, Mezaninos e Galpões',
+    description:
+      'Projetos de estruturas metálicas em Guarulhos para coberturas, mezaninos e galpões. Fabricação sob medida e atendimento rápido.',
     url: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/estruturas-metálicas-coberturas-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Estruturas metalicas em Guarulhos' }],
     locale: 'pt_BR', 

@@ -9,13 +9,17 @@ import ServiceFAQ from '@/components/ServiceFAQ'
 import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Grades de Protecao em Guarulhos | Ferro, Aluminio e Inox',
-  description: 'Grades de protecao em Guarulhos. Fabricacao e instalacao de grades de ferro, aluminio e aco inox. Seguranca para sua familia. Orcamento gratis!',
+  title: {
+    absolute: 'Grades de Proteção em Guarulhos | Fabricação Sob Medida',
+  },
+  description:
+    'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
   keywords: ['grades de protecao Guarulhos', 'grade de ferro', 'grade de aluminio', 'grade de inox', 'gradil eletrofundido'],
   alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
   openGraph: {
-    title: 'Grades de Protecao em Guarulhos | Ferro, Aluminio e Inox',
-    description: 'Grades de protecao em Guarulhos. Ferro galvanizado, aluminio e aco inox. Seguranca certificada. Solicite orcamento!',
+    title: 'Grades de Proteção em Guarulhos | Fabricação Sob Medida',
+    description:
+      'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
     url: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/grade-proteçao-janela-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Grades de protecao em Guarulhos' }],
     locale: 'pt_BR', 

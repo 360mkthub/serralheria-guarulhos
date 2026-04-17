@@ -9,13 +9,17 @@ import ServiceFAQ from '@/components/ServiceFAQ'
 import RelatedLinks from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Escadas e Corrimaos em Guarulhos | Aco Inox, Aluminio e Ferro',
-  description: 'Escadas e corrimaos em Guarulhos. Fabricacao em aco inox, aluminio e ferro. Escadas caracol, corrimaos e guarda-corpos. Orcamento gratis!',
+  title: {
+    absolute: 'Escadas e Corrimãos em Guarulhos | Ferro, Inox e Alumínio',
+  },
+  description:
+    'Escadas, corrimãos e guarda-corpos em Guarulhos com fabricação sob medida em ferro, inox e alumínio. Solicite orçamento.',
   keywords: ['escadas metalicas Guarulhos', 'corrimao de inox', 'corrimao de aluminio', 'escada caracol', 'guarda-corpo'],
   alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao' },
   openGraph: {
-    title: 'Escadas e Corrimaos em Guarulhos | Inox, Aluminio e Ferro',
-    description: 'Escadas metalicas e corrimaos em Guarulhos. Aco inox, aluminio e ferro com acabamento profissional. Conforme NBR 9050. Solicite orcamento!',
+    title: 'Escadas e Corrimãos em Guarulhos | Ferro, Inox e Alumínio',
+    description:
+      'Escadas, corrimãos e guarda-corpos em Guarulhos com fabricação sob medida em ferro, inox e alumínio. Solicite orçamento.',
     url: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/escadas,corrimaos-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Escadas e corrimaos em Guarulhos' }],
     locale: 'pt_BR', 

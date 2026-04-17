@@ -4,6 +4,10 @@ export interface BairroData {
   h1: string
   title: string
   metaDescription: string
+  /** Título exibido na SERP (Metadata API); com `generateMetadata` usando `title.absolute`. */
+  serpTitle?: string
+  /** Meta description exclusiva da SERP. */
+  serpDescription?: string
   intro: string[]
   servicosDestaque: string[]
   diferenciais: string[]
@@ -51,20 +55,108 @@ function createBairro(nome: string, slug: string, vizinhos: string[]): BairroDat
   }
 }
 
+function bairroComSerp(
+  nome: string,
+  slug: string,
+  vizinhos: string[],
+  serpTitle: string,
+  serpDescription: string
+): BairroData {
+  return { ...createBairro(nome, slug, vizinhos), serpTitle, serpDescription }
+}
+
 export const bairros: BairroData[] = [
-  createBairro('Vila Galvao', 'vila-galvao', ['Macedo', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Ponte Grande']),
-  createBairro('Centro', 'centro', ['Vila Galvao', 'Macedo', 'Vila Rio de Janeiro', 'Ponte Grande', 'Vila Endres']),
-  createBairro('Jardim Cumbica', 'jardim-cumbica', ['Vila Augusta', 'Jardim Maia', 'Parque Cecap', 'Vila Barros', 'Jardim das Oliveiras']),
-  createBairro('Jardim Maia', 'jardim-maia', ['Vila Galvao', 'Macedo', 'Vila Augusta', 'Jardim Cumbica', 'Vila Barros']),
-  createBairro('Macedo', 'macedo', ['Vila Galvao', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Vila Rio de Janeiro']),
-  createBairro('Vila Augusta', 'vila-augusta', ['Jardim Maia', 'Vila Galvao', 'Macedo', 'Jardim Cumbica', 'Parque Cecap']),
-  createBairro('Ponte Grande', 'ponte-grande', ['Vila Galvao', 'Centro', 'Vila Endres', 'Vila Rio de Janeiro', 'Macedo']),
-  createBairro('Parque Cecap', 'parque-cecap', ['Vila Augusta', 'Jardim Cumbica', 'Vila Barros', 'Jardim das Oliveiras', 'Vila Endres']),
-  createBairro('Vila Barros', 'vila-barros', ['Jardim Cumbica', 'Jardim Maia', 'Parque Cecap', 'Jardim das Oliveiras', 'Vila Endres']),
-  createBairro('Vila Cocaia', 'vila-cocaia', ['Jardim das Oliveiras', 'Vila Endres', 'Parque Cecap', 'Vila Rio de Janeiro', 'Centro']),
-  createBairro('Vila Endres', 'vila-endres', ['Ponte Grande', 'Centro', 'Parque Cecap', 'Vila Barros', 'Vila Cocaia']),
-  createBairro('Vila Rio de Janeiro', 'vila-rio-de-janeiro', ['Macedo', 'Centro', 'Ponte Grande', 'Vila Cocaia', 'Vila Endres']),
-  createBairro('Jardim das Oliveiras', 'jardim-das-oliveiras', ['Jardim Cumbica', 'Vila Barros', 'Parque Cecap', 'Vila Cocaia', 'Vila Endres']),
+  bairroComSerp(
+    'Vila Galvao',
+    'vila-galvao',
+    ['Macedo', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Ponte Grande'],
+    'Serralheria em Vila Galvão Guarulhos | Portões e Grades Sob Medida',
+    'Portões automáticos, grades e estruturas metálicas em Vila Galvão, Guarulhos. Atendimento rápido e orçamento fácil pelo WhatsApp.'
+  ),
+  bairroComSerp(
+    'Centro',
+    'centro',
+    ['Vila Galvao', 'Macedo', 'Vila Rio de Janeiro', 'Ponte Grande', 'Vila Endres'],
+    'Serralheria no Centro de Guarulhos | Portões e Grades Sob Medida',
+    'Serralheria no Centro de Guarulhos para portões automáticos, grades e estruturas metálicas. Solicite orçamento rápido pelo WhatsApp.'
+  ),
+  bairroComSerp(
+    'Jardim Cumbica',
+    'jardim-cumbica',
+    ['Vila Augusta', 'Jardim Maia', 'Parque Cecap', 'Vila Barros', 'Jardim das Oliveiras'],
+    'Serralheria no Jardim Cumbica Guarulhos | Portões e Grades Sob Medida',
+    'Atendimento em Jardim Cumbica, Guarulhos, para fabricação e instalação de portões, grades e estruturas metálicas.'
+  ),
+  bairroComSerp(
+    'Jardim Maia',
+    'jardim-maia',
+    ['Vila Galvao', 'Macedo', 'Vila Augusta', 'Jardim Cumbica', 'Vila Barros'],
+    'Serralheria no Jardim Maia Guarulhos | Portões e Grades Sob Medida',
+    'Fabricação e instalação de portões, grades e estruturas metálicas no Jardim Maia, Guarulhos. Atendimento rápido e orçamento sem complicação.'
+  ),
+  bairroComSerp(
+    'Macedo',
+    'macedo',
+    ['Vila Galvao', 'Centro', 'Jardim Maia', 'Vila Augusta', 'Vila Rio de Janeiro'],
+    'Serralheria no Macedo Guarulhos | Portões e Grades Sob Medida',
+    'Portões automáticos, grades de proteção e estruturas metálicas no Macedo, Guarulhos. Fale no WhatsApp e peça seu orçamento.'
+  ),
+  bairroComSerp(
+    'Vila Augusta',
+    'vila-augusta',
+    ['Jardim Maia', 'Vila Galvao', 'Macedo', 'Jardim Cumbica', 'Parque Cecap'],
+    'Serralheria na Vila Augusta Guarulhos | Portões e Grades Sob Medida',
+    'Atendimento em Vila Augusta, Guarulhos, para portões, grades e estruturas metálicas sob medida. Orçamento rápido pelo WhatsApp.'
+  ),
+  bairroComSerp(
+    'Ponte Grande',
+    'ponte-grande',
+    ['Vila Galvao', 'Centro', 'Vila Endres', 'Vila Rio de Janeiro', 'Macedo'],
+    'Serralheria na Ponte Grande Guarulhos | Portões e Grades Sob Medida',
+    'Serralheria na Ponte Grande, Guarulhos, com fabricação sob medida de portões, grades e estruturas metálicas. Solicite orçamento.'
+  ),
+  bairroComSerp(
+    'Parque Cecap',
+    'parque-cecap',
+    ['Vila Augusta', 'Jardim Cumbica', 'Vila Barros', 'Jardim das Oliveiras', 'Vila Endres'],
+    'Serralheria no Parque Cecap Guarulhos | Portões e Grades Sob Medida',
+    'Portões automáticos, grades e estruturas metálicas no Parque Cecap, Guarulhos. Atendimento rápido e orçamento por WhatsApp.'
+  ),
+  bairroComSerp(
+    'Vila Barros',
+    'vila-barros',
+    ['Jardim Cumbica', 'Jardim Maia', 'Parque Cecap', 'Jardim das Oliveiras', 'Vila Endres'],
+    'Serralheria na Vila Barros Guarulhos | Portões e Grades Sob Medida',
+    'Serralheria na Vila Barros, Guarulhos, para fabricação e instalação de portões, grades e estruturas metálicas sob medida.'
+  ),
+  bairroComSerp(
+    'Vila Cocaia',
+    'vila-cocaia',
+    ['Jardim das Oliveiras', 'Vila Endres', 'Parque Cecap', 'Vila Rio de Janeiro', 'Centro'],
+    'Serralheria na Vila Cocaia Guarulhos | Portões e Grades Sob Medida',
+    'Portões, grades e estruturas metálicas na Vila Cocaia, Guarulhos, com atendimento rápido e orçamento fácil pelo WhatsApp.'
+  ),
+  bairroComSerp(
+    'Vila Endres',
+    'vila-endres',
+    ['Ponte Grande', 'Centro', 'Parque Cecap', 'Vila Barros', 'Vila Cocaia'],
+    'Serralheria na Vila Endres Guarulhos | Portões e Grades Sob Medida',
+    'Atendimento em Vila Endres, Guarulhos, para portões automáticos, grades e estruturas metálicas. Solicite orçamento rápido.'
+  ),
+  bairroComSerp(
+    'Vila Rio de Janeiro',
+    'vila-rio-de-janeiro',
+    ['Macedo', 'Centro', 'Ponte Grande', 'Vila Cocaia', 'Vila Endres'],
+    'Serralheria na Vila Rio de Janeiro Guarulhos | Portões e Grades Sob Medida',
+    'Serralheria na Vila Rio de Janeiro, Guarulhos, com fabricação sob medida de portões, grades e estruturas metálicas.'
+  ),
+  bairroComSerp(
+    'Jardim das Oliveiras',
+    'jardim-das-oliveiras',
+    ['Jardim Cumbica', 'Vila Barros', 'Parque Cecap', 'Vila Cocaia', 'Vila Endres'],
+    'Serralheria no Jardim das Oliveiras Guarulhos | Portões e Grades Sob Medida',
+    'Portões automáticos, grades e estruturas metálicas no Jardim das Oliveiras, Guarulhos. Fale pelo WhatsApp e peça orçamento.'
+  ),
 ]
 
 export function getBairroBySlug(slug: string): BairroData | undefined {

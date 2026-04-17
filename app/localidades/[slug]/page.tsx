@@ -20,13 +20,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const bairro = getBairroBySlug(slug)
   if (!bairro) notFound()
 
+  const pageTitle = bairro.serpTitle ?? bairro.title
+  const pageDescription = bairro.serpDescription ?? bairro.metaDescription
+
   return {
-    title: bairro.title,
-    description: bairro.metaDescription,
+    title: bairro.serpTitle ? { absolute: bairro.serpTitle } : bairro.title,
+    description: pageDescription,
     alternates: { canonical: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}` },
     openGraph: {
-      title: bairro.title,
-      description: bairro.metaDescription,
+      title: pageTitle,
+      description: pageDescription,
       url: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}`,
       locale: 'pt_BR',
       type: 'website',

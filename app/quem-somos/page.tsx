@@ -8,12 +8,15 @@ import { BannerTop } from '@/components/Banners'
 import Breadcrumbs, { generateBreadcrumbSchema } from '@/components/Breadcrumbs'
 
 export const metadata: Metadata = {
-  title: 'Quem Somos | Serralheria em Guarulhos - 15 Anos de Experiencia',
-  description: 'Conheca a Serralheria em Guarulhos. Mais de 15 anos de experiencia em portoes automaticos, grades de protecao e estruturas metalicas. Qualidade e garantia!',
+  title: {
+    absolute: 'Serralheria em Guarulhos | Experiência e Fabricação Sob Medida',
+  },
+  description:
+    'Conheça a serralheria em Guarulhos especializada em portões, grades e estruturas metálicas com atendimento ágil e acabamento de qualidade.',
   alternates: { canonical: 'https://serralheriaemguarulhos.com/quem-somos' },
   openGraph: { 
-    title: 'Quem Somos | Serralheria em Guarulhos', 
-    description: '15 anos de experiencia em serralheria em Guarulhos.', 
+    title: 'Serralheria em Guarulhos | Experiência e Fabricação Sob Medida', 
+    description: 'Conheça a serralheria em Guarulhos especializada em portões, grades e estruturas metálicas com atendimento ágil e acabamento de qualidade.', 
     url: 'https://serralheriaemguarulhos.com/quem-somos', 
     locale: 'pt_BR', 
     type: 'website' 

@@ -27,14 +27,16 @@ const ServiceFAQ = dynamic(() => import('@/components/ServiceFAQ'), {
 })
 
 export const metadata: Metadata = {
-  title: 'Serralheria Guarulhos | Portoes, Grades e Estruturas Metalicas',
+  title: {
+    absolute: 'Serralheria em Guarulhos | Portões Sob Medida e Orçamento Rápido',
+  },
   description:
-    'Serralheria em Guarulhos com mais de 15 anos. Portoes automaticos, grades de protecao e estruturas metalicas. Orcamento gratis em 24h na regiao!',
+    'Portões automáticos, grades e estruturas metálicas em Guarulhos. Atendimento rápido, fabricação sob medida e orçamento por WhatsApp.',
   alternates: { canonical: 'https://serralheriaemguarulhos.com/' },
   openGraph: {
-    title: 'Serralheria Guarulhos | Portoes, Grades e Estruturas Metalicas',
+    title: 'Serralheria em Guarulhos | Portões Sob Medida e Orçamento Rápido',
     description:
-      'Especialistas em metal em Guarulhos: portoes, grades e coberturas. Orcamento gratis em 24h.',
+      'Portões automáticos, grades e estruturas metálicas em Guarulhos. Atendimento rápido, fabricação sob medida e orçamento por WhatsApp.',
     url: 'https://serralheriaemguarulhos.com/',
     locale: 'pt_BR',
     type: 'website',
