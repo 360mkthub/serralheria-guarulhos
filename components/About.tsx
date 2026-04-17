@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Check, Award, Users, Clock } from 'lucide-react'
 import { HERO_ABOUT_IMAGE_SRC } from '@/lib/site-images'
 
@@ -25,12 +24,12 @@ const About = () => {
           {/* Left Column - Image Otimizada */}
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-video md:aspect-square">
-              <Image
+              <img
                 src={HERO_ABOUT_IMAGE_SRC}
                 alt="Equipe de serralheria especializada em Guarulhos"
-                fill
-                className="object-cover"
+                className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             

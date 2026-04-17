@@ -28,7 +28,21 @@ app.prepare().then(() => {
     try {
       req.url = normalizeRequestUrl(req);
       const parsedUrl = parse(req.url, true);
+      const pathname = parsedUrl.pathname || '/';
+      const logHomeOrLocalidades =
+        pathname === '/' || pathname.startsWith('/localidades');
+      const t0 = logHomeOrLocalidades ? Date.now() : 0;
       await handle(req, res, parsedUrl);
+      if (logHomeOrLocalidades) {
+        const ms = Date.now() - t0;
+        console.log(
+          '[req]',
+          req.method,
+          pathname,
+          ms + 'ms',
+          'status=' + res.statusCode
+        );
+      }
     } catch (err) {
       console.error('Error occurred handling', req.url, err);
       res.statusCode = 500;

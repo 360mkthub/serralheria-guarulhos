@@ -1,17 +1,30 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import Services from '@/components/Services'
 import About from '@/components/About'
 import Locations from '@/components/Locations'
-import Gallery from '@/components/Gallery'
-import Testimonials from '@/components/Testimonials'
 import Process from '@/components/Process'
-import CTA from '@/components/CTA'
-import ServiceFAQ from '@/components/ServiceFAQ'
 import Footer from '@/components/Footer'
 import { homeFaqs } from '@/lib/home-faqs'
 import WhatsAppButton from '@/components/WhatsAppButton'
+
+/** Code-split de seções client pesadas (Radix/Dialog) para reduzir custo da primeira compilação/resposta da rota `/`. */
+const Services = dynamic(() => import('@/components/Services'), {
+  loading: () => <div className="min-h-[28rem] bg-gray-50" aria-hidden />,
+})
+const Gallery = dynamic(() => import('@/components/Gallery'), {
+  loading: () => <div className="min-h-[24rem] bg-gray-50" aria-hidden />,
+})
+const Testimonials = dynamic(() => import('@/components/Testimonials'), {
+  loading: () => <div className="min-h-[22rem] bg-white" aria-hidden />,
+})
+const CTA = dynamic(() => import('@/components/CTA'), {
+  loading: () => <div className="min-h-[20rem] bg-white" aria-hidden />,
+})
+const ServiceFAQ = dynamic(() => import('@/components/ServiceFAQ'), {
+  loading: () => <div className="min-h-[18rem] bg-white" aria-hidden />,
+})
 
 export const metadata: Metadata = {
   title: 'Serralheria Guarulhos | Portoes, Grades e Estruturas Metalicas',
