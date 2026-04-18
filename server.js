@@ -2,6 +2,14 @@ const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
 
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught Exception:', err);
+});
+
+process.on('unhandledRejection', (err) => {
+  console.error('Unhandled Rejection:', err);
+});
+
 const dev = process.env.NODE_ENV !== 'production';
 const port = parseInt(process.env.PORT, 10) || 3000;
 const hostname = '0.0.0.0';
