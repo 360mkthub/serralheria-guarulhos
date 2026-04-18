@@ -1,3 +1,8 @@
+/**
+ * LEGADO — não é mais o entrypoint em produção.
+ * O start oficial é `npm run start` → `next start -H 0.0.0.0` (rewrites de /server.js em next.config.mjs).
+ * Arquivo mantido só como referência; não remover sem revisar deploy na Hostinger.
+ */
 const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');

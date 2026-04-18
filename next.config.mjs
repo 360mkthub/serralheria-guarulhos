@@ -35,6 +35,13 @@ const nextConfig = {
   async redirects() {
     return []
   },
+  /** Compatível com proxy que encaminha /server.js/... (ex.: Hostinger); equivale ao strip em server.js legado. */
+  async rewrites() {
+    return [
+      { source: '/server.js', destination: '/' },
+      { source: '/server.js/:path*', destination: '/:path*' },
+    ]
+  },
 }
 
 export default nextConfig
