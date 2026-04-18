@@ -5,7 +5,7 @@ import { SITE_URL } from '@/lib/site'
 import { getAllPostSlugs } from '@/lib/wordpress'
 import { bairros } from '@/lib/bairros-data'
 
-export const revalidate = 1800
+export const revalidate = 86400 // revalidate at most once per day
 
 /** Mesma regra de `generate-sitemap.js`: home com barra final; demais sem barra duplicada. */
 function buildUrl(pathStr: string): string {

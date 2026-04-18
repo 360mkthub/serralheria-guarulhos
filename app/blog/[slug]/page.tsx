@@ -10,7 +10,7 @@ import AuthorBox from '@/components/AuthorBox'
 import RelatedLinks from '@/components/RelatedLinks'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { SITE_URL } from '@/lib/site'
-import { getPostBySlug, getAllPostSlugs, getRelatedPosts } from '@/lib/wordpress'
+import { getPostBySlugCached, getAllPostSlugs, getRelatedPosts } from '@/lib/wordpress'
 
 export const dynamic = 'force-dynamic'
 
@@ -30,7 +30,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params
   try {
-    const post = await getPostBySlug(slug)
+    const post = await getPostBySlugCached(slug)
     if (!post) return { title: 'Post não encontrado' }
 
     const seo = post.seo
@@ -94,7 +94,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   let post: Post | null = null
 
   try {
-    post = await getPostBySlug(slug)
+    post = await getPostBySlugCached(slug)
   } catch {
     // Will show not found
   }

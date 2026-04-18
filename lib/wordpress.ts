@@ -1,3 +1,5 @@
+import { cache } from 'react'
+
 const WORDPRESS_GRAPHQL_URL_FALLBACK = 'https://api.serralheriaemguarulhos.com/graphql'
 const WORDPRESS_GRAPHQL_TIMEOUT_MS = 8000
 
@@ -274,6 +276,9 @@ export async function getPostBySlug(slug: string) {
     return null
   }
 }
+
+/** Mesma origem que `getPostBySlug`, com deduplicação por slug dentro do mesmo request (metadata + página). */
+export const getPostBySlugCached = cache((slug: string) => getPostBySlug(slug))
 
 type PostSlugsPageData = {
   posts?: {
