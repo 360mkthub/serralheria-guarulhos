@@ -1,12 +1,8 @@
 'use client'
 
-import { useState } from 'react'
 import Link from 'next/link'
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from '@/components/ui/dialog'
 
 const Services = () => {
-  const [selectedService, setSelectedService] = useState<string | null>(null)
-
   const services = [
     {
       id: 'portoes',
@@ -127,36 +123,6 @@ const Services = () => {
           </a>
         </div>
       </div>
-
-      <Dialog open={!!selectedService} onOpenChange={() => setSelectedService(null)}>
-        <DialogContent className="max-w-2xl bg-white">
-          {selectedService && (
-            <>
-              <DialogHeader>
-                <DialogTitle className="text-2xl">
-                  {services.find(s => s.id === selectedService)?.title}
-                </DialogTitle>
-                <DialogDescription className="text-base mt-4">
-                  {services.find(s => s.id === selectedService)?.description}
-                </DialogDescription>
-              </DialogHeader>
-              <div className="mt-6">
-                <h4 className="font-semibold text-gray-900 mb-3">Tipos de serviço:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {services.find(s => s.id === selectedService)?.types.map((type) => (
-                    <span
-                      key={type}
-                      className="px-4 py-2 bg-blue-100 text-blue-700 text-sm font-medium rounded-full"
-                    >
-                      {type}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </>
-          )}
-        </DialogContent>
-      </Dialog>
     </section>
   )
 }

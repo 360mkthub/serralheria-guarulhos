@@ -6,13 +6,11 @@ import About from '@/components/About'
 import Locations from '@/components/Locations'
 import Process from '@/components/Process'
 import Footer from '@/components/Footer'
+import Services from '@/components/Services'
 import { homeFaqs } from '@/lib/home-faqs'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
 /** Code-split de seções client pesadas (Radix/Dialog) para reduzir custo da primeira compilação/resposta da rota `/`. */
-const Services = dynamic(() => import('@/components/Services'), {
-  loading: () => <div className="min-h-[28rem] bg-gray-50" aria-hidden />,
-})
 const Gallery = dynamic(() => import('@/components/Gallery'), {
   loading: () => <div className="min-h-[24rem] bg-gray-50" aria-hidden />,
 })
