@@ -1,11 +1,12 @@
-# Configurações do Motor Node.js (Phusion Passenger)
+# Configuração de boot Node.js via Phusion Passenger (produção)
 PassengerAppRoot "/home/u236560328/domains/serralheriaemguarulhos.com/public_html"
 PassengerAppType node
 PassengerNodejs "/opt/alt/alt-nodejs20/root/usr/bin/node"
 PassengerStartupFile server.js
 PassengerBaseURI /
 
-# Regras de Redirecionamento para Rotas do Next.js
+# O entrypoint oficial em produção é: Passenger -> server.js
+# Regras de roteamento para encaminhar URLs da aplicação ao server.js
 RewriteEngine On
 RewriteBase /
 
@@ -13,5 +14,5 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# Se NÃO existir (como as páginas do blog), ele manda para o server.js processar
+# Se NÃO existir fisicamente, encaminha para server.js processar a rota
 RewriteRule ^(.*)$ server.js/$1 [L]

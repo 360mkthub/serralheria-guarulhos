@@ -1,7 +1,6 @@
 /**
- * LEGADO — não é mais o entrypoint em produção.
- * O start oficial é `npm run start` → `next start -H 0.0.0.0` (rewrites de /server.js em next.config.mjs).
- * Arquivo mantido só como referência; não remover sem revisar deploy na Hostinger.
+ * Entrypoint oficial de produção quando o PassengerStartupFile aponta para `server.js`.
+ * Mantém compatibilidade com Hostinger + Passenger e encaminha requisições para o Next.
  */
 const { createServer } = require('http');
 const { parse } = require('url');
