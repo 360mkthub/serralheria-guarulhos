@@ -46,8 +46,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos' },
-    { '@type': 'ListItem', position: 3, name: 'Portões automáticos', item: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos' },
+    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos/' },
+    { '@type': 'ListItem', position: 3, name: 'Portões automáticos', item: 'https://serralheriaemguarulhos.com/servicos/portoes-automaticos/' },
   ],
 }
 
@@ -59,7 +59,7 @@ const jsonLd = {
       '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
       name: 'Serralheria em Guarulhos',
       description: 'Especialistas em portões automáticos, grades, estruturas metálicas e coberturas em Guarulhos',
-      url: 'https://serralheriaemguarulhos.com',
+      url: 'https://serralheriaemguarulhos.com/',
       telephone: '+5551991606477',
       email: 'contato@serralheriaemguarulhos.com',
       image: 'https://serralheriaemguarulhos.com/images/portao-automatico-serralheria-guarulhos.jpeg',

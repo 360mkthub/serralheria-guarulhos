@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description:
     'Escadas, corrimãos e guarda-corpos em Guarulhos com fabricação sob medida em ferro, inox e alumínio. Solicite orçamento.',
   keywords: ['escadas metálicas Guarulhos', 'corrimão de inox', 'corrimão de alumínio', 'escada caracol', 'guarda-corpo'],
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao/' },
   openGraph: {
     title: 'Escadas e Corrimãos em Guarulhos | Ferro, Inox e Alumínio',
     description:
       'Escadas, corrimãos e guarda-corpos em Guarulhos com fabricação sob medida em ferro, inox e alumínio. Solicite orçamento.',
-    url: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao',
+    url: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao/',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/escadas,corrimaos-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Escadas e corrimãos em Guarulhos' }],
     locale: 'pt_BR', 
     type: 'website',
@@ -45,8 +45,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos' },
-    { '@type': 'ListItem', position: 3, name: 'Escadas e corrimãos', item: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao' },
+    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos/' },
+    { '@type': 'ListItem', position: 3, name: 'Escadas e corrimãos', item: 'https://serralheriaemguarulhos.com/servicos/escadas-manutencao/' },
   ],
 }
 
@@ -57,7 +57,7 @@ const jsonLd = {
       '@type': 'LocalBusiness',
       '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
       name: 'Serralheria em Guarulhos',
-      url: 'https://serralheriaemguarulhos.com',
+      url: 'https://serralheriaemguarulhos.com/',
       telephone: '+5551991606477',
       image: 'https://serralheriaemguarulhos.com/images/escadas,corrimaos-serralheria-guarulhos.jpeg',
       address: { 

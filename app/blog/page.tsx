@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   title: 'Blog | Serralheria em Guarulhos - Dicas e Novidades',
   description: 'Blog da Serralheria em Guarulhos. Dicas sobre portoes automaticos, grades de protecao, estruturas metalicas e manutencao. Acompanhe nossas novidades!',
   keywords: ['blog serralheria Guarulhos', 'dicas portao automatico', 'manutencao grades', 'estruturas metalicas'],
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/blog' }, // Corrigido para .com
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/blog/' }, // Corrigido para .com
   openGraph: {
     title: 'Blog | Serralheria em Guarulhos',
     description: 'Dicas e novidades sobre serralheria, portoes automaticos e estruturas metalicas em Guarulhos.',
-    url: 'https://serralheriaemguarulhos.com/blog', // Corrigido para .com
+    url: 'https://serralheriaemguarulhos.com/blog/', // Corrigido para .com
     locale: 'pt_BR',
     type: 'website',
   },
@@ -46,7 +46,7 @@ export default async function BlogPage() {
     '@id': 'https://serralheriaemguarulhos.com/blog/#blog', // ID único adicionado
     name: 'Blog da Serralheria em Guarulhos',
     description: 'Dicas, novidades e informacoes sobre serralheria em Guarulhos.',
-    url: 'https://serralheriaemguarulhos.com/blog', // Corrigido para .com
+    url: 'https://serralheriaemguarulhos.com/blog/', // Corrigido para .com
     publisher: { 
       '@type': 'LocalBusiness', 
       '@id': 'https://serralheriaemguarulhos.com/#localbusiness', // Vinculado ao negócio local

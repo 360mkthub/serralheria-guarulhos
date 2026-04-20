@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description:
     'Projetos de estruturas metálicas em Guarulhos para coberturas, mezaninos e galpões. Fabricação sob medida e atendimento rápido.',
   keywords: ['estruturas metálicas Guarulhos', 'galpão metálico', 'mezanino', 'cobertura metálica', 'telhado industrial'],
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas/' },
   openGraph: {
     title: 'Estruturas Metálicas em Guarulhos | Coberturas, Mezaninos e Galpões',
     description:
       'Projetos de estruturas metálicas em Guarulhos para coberturas, mezaninos e galpões. Fabricação sob medida e atendimento rápido.',
-    url: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas',
+    url: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas/',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/estruturas-metálicas-coberturas-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Estruturas metálicas em Guarulhos' }],
     locale: 'pt_BR', 
     type: 'website',
@@ -45,8 +45,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos' },
-    { '@type': 'ListItem', position: 3, name: 'Estruturas metálicas', item: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas' },
+    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos/' },
+    { '@type': 'ListItem', position: 3, name: 'Estruturas metálicas', item: 'https://serralheriaemguarulhos.com/servicos/estruturas-metalicas/' },
   ],
 }
 
@@ -57,7 +57,7 @@ const jsonLd = {
       '@type': 'LocalBusiness',
       '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
       name: 'Serralheria em Guarulhos',
-      url: 'https://serralheriaemguarulhos.com',
+      url: 'https://serralheriaemguarulhos.com/',
       telephone: '+5551991606477',
       image: 'https://serralheriaemguarulhos.com/images/estruturas-metálicas-coberturas-serralheria-guarulhos.jpeg',
       address: { 

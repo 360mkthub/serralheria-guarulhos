@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
-export const metadata: Metadata = { title: 'Termos de Uso', description: 'Termos de uso do site Serralheria em Guarulhos.', alternates: { canonical: 'https://serralheriaemguarulhos.com.br/termos' } }
+export const metadata: Metadata = { title: 'Termos de Uso', description: 'Termos de uso do site Serralheria em Guarulhos.', alternates: { canonical: 'https://serralheriaemguarulhos.com/termos/' } }
 
 export default function TermosPage() {
   return (

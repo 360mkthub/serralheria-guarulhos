@@ -26,11 +26,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: bairro.serpTitle ? { absolute: bairro.serpTitle } : bairro.title,
     description: pageDescription,
-    alternates: { canonical: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}` },
+    alternates: { canonical: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}/` },
     openGraph: {
       title: pageTitle,
       description: pageDescription,
-      url: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}`,
+      url: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}/`,
       locale: 'pt_BR',
       type: 'website',
     },
@@ -48,7 +48,7 @@ export default async function BairroPage({ params }: { params: Promise<{ slug: s
     name: `Serralheria em ${bairro.nome} - Guarulhos`,
     description: bairro.metaDescription,
     "image": "https://serralheriaemguarulhos.com/images/serralheria-guarulhos.jpeg",
-    url: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}`,
+    url: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}/`,
     telephone: '+5551991606477',
     email: 'contato@serralheriaemguarulhos.com',
     address: { 
@@ -76,8 +76,8 @@ export default async function BairroPage({ params }: { params: Promise<{ slug: s
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Localidades', item: 'https://serralheriaemguarulhos.com/localidades' },
-      { '@type': 'ListItem', position: 3, name: bairro.nome, item: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}` },
+      { '@type': 'ListItem', position: 2, name: 'Localidades', item: 'https://serralheriaemguarulhos.com/localidades/' },
+      { '@type': 'ListItem', position: 3, name: bairro.nome, item: `https://serralheriaemguarulhos.com/localidades/${bairro.slug}/` },
     ],
   }
 

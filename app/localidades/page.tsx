@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   },
   description:
     'Atendemos Vila Galvão, Centro, Jardim Maia, Macedo e outros bairros de Guarulhos com portões, grades e estruturas metálicas sob medida.',
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/localidades' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/localidades/' },
   openGraph: { 
     title: 'Serralheria em Guarulhos | Atendimento em Todos os Bairros', 
     description: 'Atendemos Vila Galvão, Centro, Jardim Maia, Macedo e outros bairros de Guarulhos com portões, grades e estruturas metálicas sob medida.', 
-    url: 'https://serralheriaemguarulhos.com/localidades', 
+    url: 'https://serralheriaemguarulhos.com/localidades/', 
     locale: 'pt_BR', 
     type: 'website' 
   },
@@ -47,7 +47,7 @@ export default function LocalidadesPage() {
     '@type': 'BreadcrumbList', 
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' }, 
-      { '@type': 'ListItem', position: 2, name: 'Localidades', item: 'https://serralheriaemguarulhos.com/localidades' }
+      { '@type': 'ListItem', position: 2, name: 'Localidades', item: 'https://serralheriaemguarulhos.com/localidades/' }
     ] 
   }
 
@@ -58,7 +58,7 @@ export default function LocalidadesPage() {
         '@type': 'LocalBusiness',
         '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
         name: 'Serralheria em Guarulhos',
-        url: 'https://serralheriaemguarulhos.com',
+        url: 'https://serralheriaemguarulhos.com/',
         telephone: '+5551991606477',
         image: 'https://serralheriaemguarulhos.com/images/serralheria-guarulhos.jpeg',
         priceRange: '$$',
@@ -79,14 +79,14 @@ export default function LocalidadesPage() {
         '@type': 'CollectionPage',
         '@id': 'https://serralheriaemguarulhos.com/localidades/#collection',
         name: 'Localidades Atendidas - Serralheria em Guarulhos',
-        url: 'https://serralheriaemguarulhos.com/localidades',
+        url: 'https://serralheriaemguarulhos.com/localidades/',
         mainEntity: { 
           '@type': 'ItemList', 
           itemListElement: bairros.map((b, i) => ({ 
             '@type': 'ListItem', 
             position: i + 1, 
             name: `Serralheria em ${b.nome}`, 
-            url: `https://serralheriaemguarulhos.com/localidades/${b.slug}` 
+            url: `https://serralheriaemguarulhos.com/localidades/${b.slug}/` 
           })) 
         }
       }

@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   },
   description:
     'Conheça a serralheria em Guarulhos especializada em portões, grades e estruturas metálicas com atendimento ágil e acabamento de qualidade.',
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/quem-somos' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/quem-somos/' },
   openGraph: { 
     title: 'Serralheria em Guarulhos | Experiência e Fabricação Sob Medida', 
     description: 'Conheça a serralheria em Guarulhos especializada em portões, grades e estruturas metálicas com atendimento ágil e acabamento de qualidade.', 
-    url: 'https://serralheriaemguarulhos.com/quem-somos', 
+    url: 'https://serralheriaemguarulhos.com/quem-somos/', 
     locale: 'pt_BR', 
     type: 'website' 
   },
@@ -33,7 +33,7 @@ export default function QuemSomosPage() {
       {
         '@type': 'AboutPage',
         '@id': 'https://serralheriaemguarulhos.com/quem-somos/#webpage',
-        url: 'https://serralheriaemguarulhos.com/quem-somos',
+        url: 'https://serralheriaemguarulhos.com/quem-somos/',
         name: 'Quem Somos - Serralheria em Guarulhos',
         description: 'Conheça a Serralheria em Guarulhos. Mais de 15 anos de experiência em portões, grades e estruturas.',
         mainEntity: {
@@ -41,7 +41,7 @@ export default function QuemSomosPage() {
           '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
           name: 'Serralheria em Guarulhos',
           description: 'Especialistas em serralheria em Guarulhos com 15 anos de experiência',
-          url: 'https://serralheriaemguarulhos.com',
+          url: 'https://serralheriaemguarulhos.com/',
           telephone: '+5551991606477',
           priceRange: '$$',
           image: 'https://serralheriaemguarulhos.com/images/serralheiro-mario-vargas-serralheria-guarulhos.jpg',

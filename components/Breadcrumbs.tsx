@@ -60,6 +60,11 @@ const Breadcrumbs = ({ items, schema }: BreadcrumbsProps) => {
 }
 
 export const generateBreadcrumbSchema = (items: BreadcrumbItem[]) => {
+  const toAbsoluteUrl = (href: string) => {
+    if (href === '/') return 'https://serralheriaemguarulhos.com/'
+    return `https://serralheriaemguarulhos.com${href.endsWith('/') ? href : `${href}/`}`
+  }
+
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -68,13 +73,13 @@ export const generateBreadcrumbSchema = (items: BreadcrumbItem[]) => {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://serralheriaemguarulhos.com.br/',
+        item: 'https://serralheriaemguarulhos.com/',
       },
       ...items.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 2,
         name: item.label,
-        item: item.href ? `https://serralheriaemguarulhos.com.br${item.href}` : undefined,
+        item: item.href ? toAbsoluteUrl(item.href) : undefined,
       })),
     ],
   }

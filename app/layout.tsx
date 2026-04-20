@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://serralheriaemguarulhos.com',
+    url: 'https://serralheriaemguarulhos.com/',
     siteName: 'Serralheria em Guarulhos',
     title: 'Serralheria em Guarulhos | Portões automáticos, grades e estruturas metálicas',
     description:

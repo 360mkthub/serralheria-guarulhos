@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react'
 
-export const metadata: Metadata = { title: 'Política de privacidade', description: 'Política de privacidade do site Serralheria em Guarulhos.', alternates: { canonical: 'https://serralheriaemguarulhos.com.br/privacidade' } }
+export const metadata: Metadata = { title: 'Política de privacidade', description: 'Política de privacidade do site Serralheria em Guarulhos.', alternates: { canonical: 'https://serralheriaemguarulhos.com/privacidade/' } }
 
 export default function PrivacidadePage() {
   return (

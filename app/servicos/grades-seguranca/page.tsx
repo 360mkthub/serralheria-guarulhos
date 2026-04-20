@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description:
     'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
   keywords: ['grades de proteção Guarulhos', 'grade de ferro', 'grade de alumínio', 'grade de inox', 'gradil eletrofundido'],
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca/' },
   openGraph: {
     title: 'Grades de Proteção em Guarulhos | Fabricação Sob Medida',
     description:
       'Grades de proteção em Guarulhos para janelas, portas e sacadas. Fabricação sob medida com instalação e orçamento rápido.',
-    url: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca',
+    url: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca/',
     images: [{ url: 'https://serralheriaemguarulhos.com/images/grade-proteçao-janela-serralheria-guarulhos.jpeg', width: 1200, height: 630, alt: 'Grades de proteção em Guarulhos' }],
     locale: 'pt_BR', 
     type: 'website',
@@ -45,8 +45,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://serralheriaemguarulhos.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos' },
-    { '@type': 'ListItem', position: 3, name: 'Grades de segurança', item: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca' },
+    { '@type': 'ListItem', position: 2, name: 'Serviços', item: 'https://serralheriaemguarulhos.com/servicos/' },
+    { '@type': 'ListItem', position: 3, name: 'Grades de segurança', item: 'https://serralheriaemguarulhos.com/servicos/grades-seguranca/' },
   ],
 }
 
@@ -57,7 +57,7 @@ const jsonLd = {
       '@type': 'LocalBusiness', 
       '@id': 'https://serralheriaemguarulhos.com/#localbusiness', 
       name: 'Serralheria em Guarulhos', 
-      url: 'https://serralheriaemguarulhos.com', 
+      url: 'https://serralheriaemguarulhos.com/', 
       telephone: '+5551991606477', 
       image: 'https://serralheriaemguarulhos.com/images/grade-proteçao-janela-serralheria-guarulhos.jpeg',
       address: { 

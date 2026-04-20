@@ -27,7 +27,7 @@ const AuthorBox = ({ showSchema = true }: AuthorBoxProps) => {
     name: authorData.name,
     jobTitle: authorData.jobTitle,
     description: authorData.description,
-    image: `https://serralheriaemguarulhos.com.br${authorData.image}`,
+    image: `https://serralheriaemguarulhos.com${authorData.image}`,
     sameAs: authorData.sameAs,
     worksFor: {
       '@type': 'LocalBusiness',

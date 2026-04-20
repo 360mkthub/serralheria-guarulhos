@@ -7,14 +7,14 @@ import { bairros } from '@/lib/bairros-data'
 
 export const revalidate = 86400 // revalidate at most once per day
 
-/** Mesma regra de `generate-sitemap.js`: home com barra final; demais sem barra duplicada. */
+/** Regra canônica: URLs HTML com barra final; home preservada com `/`. */
 function buildUrl(pathStr: string): string {
   const tail = pathStr.startsWith('/') ? pathStr : `/${pathStr}`
   const normalized = tail.replace(/\/+/g, '/')
   if (normalized === '/') {
     return `${SITE_URL}/`
   }
-  return `${SITE_URL}${normalized}`
+  return `${SITE_URL}${normalized}/`
 }
 
 function toAppRoute(filePath: string): string {

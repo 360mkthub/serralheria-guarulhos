@@ -48,7 +48,7 @@ const localBusinessSchema = {
   '@id': 'https://serralheriaemguarulhos.com/#localbusiness',
   name: 'Serralheria em Guarulhos',
   description: 'Especialistas em serralheria em Guarulhos com mais de 15 anos de experiência. Portões automáticos, grades de proteção, estruturas metálicas e coberturas. Orçamento grátis em 24h!',
-  url: 'https://serralheriaemguarulhos.com',
+  url: 'https://serralheriaemguarulhos.com/',
   telephone: '+5551991606477',
   email: 'contato@serralheriaemguarulhos.com',
   image: 'https://serralheriaemguarulhos.com/images/serralheria-guarulhos.jpeg',

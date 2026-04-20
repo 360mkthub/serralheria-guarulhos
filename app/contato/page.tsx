@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     absolute: 'Contato | Solicite Orçamento de Serralheria em Guarulhos',
   },
   description: 'Fale agora pelo WhatsApp e solicite orçamento para portões, grades e estruturas metálicas em Guarulhos. Atendimento rápido.',
-  alternates: { canonical: 'https://serralheriaemguarulhos.com/contato' },
+  alternates: { canonical: 'https://serralheriaemguarulhos.com/contato/' },
   openGraph: { 
     title: 'Contato | Solicite Orçamento de Serralheria em Guarulhos', 
     description: 'Fale agora pelo WhatsApp e solicite orçamento para portões, grades e estruturas metálicas em Guarulhos. Atendimento rápido.', 
-    url: 'https://serralheriaemguarulhos.com/contato', 
+    url: 'https://serralheriaemguarulhos.com/contato/', 
     locale: 'pt_BR', 
     type: 'website' 
   },
@@ -32,7 +32,7 @@ export default function ContatoPage() {
       {
         '@type': 'ContactPage',
         '@id': 'https://serralheriaemguarulhos.com/contato/#webpage',
-        url: 'https://serralheriaemguarulhos.com/contato',
+        url: 'https://serralheriaemguarulhos.com/contato/',
         name: 'Contato - Serralheria em Guarulhos',
         description: 'Entre em contato com a Serralheria em Guarulhos para orçamentos rápidos.',
         mainEntity: {
