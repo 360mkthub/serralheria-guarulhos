@@ -1,18 +1,12 @@
-# Configuração de boot Node.js via Phusion Passenger (produção)
-PassengerAppRoot "/home/u236560328/domains/serralheriaemguarulhos.com/public_html"
+# Este arquivo deve espelhar o public_html/.htaccess gerenciado pela Hostinger
+# para evitar regressão de deploy/entrypoint entre repositório e produção.
+PassengerAppRoot /home/u236560328/domains/serralheriaemguarulhos.com/nodejs
 PassengerAppType node
-PassengerNodejs "/opt/alt/alt-nodejs20/root/usr/bin/node"
+PassengerNodejs /opt/alt/alt-nodejs22/root/bin/node
 PassengerStartupFile server.js
 PassengerBaseURI /
-
-# O entrypoint oficial em produção é: Passenger -> server.js
-# Regras de roteamento para encaminhar URLs da aplicação ao server.js
-RewriteEngine On
-RewriteBase /
-
-# Se o arquivo ou pasta existir fisicamente (como imagens/css), ele abre direto
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Se NÃO existir fisicamente, encaminha para server.js processar a rota
-RewriteRule ^(.*)$ server.js/$1 [L]
+PassengerRestartDir /home/u236560328/domains/serralheriaemguarulhos.com/nodejs/tmp
+SetEnv NODE_OPTIONS "--require /home/u236560328/domains/serralheriaemguarulhos.com/public_html/.builds/config/preload-timestamp.js"
+SetEnv LSNODE_CONSOLE_LOG console.log
+SetEnv TOKIO_WORKER_THREADS 2
+RewriteRule ^\.builds - [F,L]
