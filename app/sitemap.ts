@@ -32,6 +32,20 @@ function isStaticPageRoute(route: string): boolean {
   return !route.includes('[') && !route.startsWith('/api')
 }
 
+const FALLBACK_STATIC_ROUTES = [
+  '/',
+  '/blog',
+  '/contato',
+  '/quem-somos',
+  '/localidades',
+  '/privacidade',
+  '/termos',
+  '/servicos/portoes-automaticos',
+  '/servicos/grades-seguranca',
+  '/servicos/estruturas-metalicas',
+  '/servicos/escadas-manutencao',
+]
+
 async function collectPageFiles(dirAbsPath: string, dirRelative = 'app'): Promise<string[]> {
   const entries = await readdir(dirAbsPath, { withFileTypes: true })
   const files: string[] = []
@@ -55,12 +69,23 @@ async function collectPageFiles(dirAbsPath: string, dirRelative = 'app'): Promis
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const pageFiles = await collectPageFiles(path.join(process.cwd(), 'app'))
+  let pageFiles: string[] = []
+  try {
+    pageFiles = await collectPageFiles(path.join(process.cwd(), 'app'))
+  } catch (error) {
+    // Em produção (ex.: deploy Hostinger), o source `app/` pode não existir no runtime.
+    // Nesses casos, usa fallback estático e mantém entradas dinâmicas (WP + bairros).
+    if (
+      !(error instanceof Error) ||
+      !('code' in error) ||
+      (error as NodeJS.ErrnoException).code !== 'ENOENT'
+    ) {
+      throw error
+    }
+  }
   const staticRoutes = Array.from(
     new Set(
-      pageFiles
-        .map(toAppRoute)
-        .filter(isStaticPageRoute)
+      (pageFiles.length > 0 ? pageFiles.map(toAppRoute).filter(isStaticPageRoute) : FALLBACK_STATIC_ROUTES)
     )
   )
 
