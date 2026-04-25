@@ -112,7 +112,9 @@ export default function EscadasPage() {
     <div className="min-h-screen bg-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Header />
-      <Breadcrumbs items={breadcrumbItems} schema={breadcrumbSchema} />
+      <div className="pt-20">
+        <Breadcrumbs items={breadcrumbItems} schema={breadcrumbSchema} />
+      </div>
       <main>
         <section className="relative min-h-[60vh] flex items-center pt-24">
           <div className="absolute inset-0 z-0">
